@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import './Form.css';
 
 const Form = () => {
@@ -6,7 +7,7 @@ const Form = () => {
     <>
         <div className="flex items-center min-h-screen p-8 bg-gray-100 lg:justify-center">
       <div
-        className="flex flex-col flex-1 overflow-hidden bg-white rounded-md shadow-lg max  md:flex-1 lg:max-w-screen-md"
+        className="flex flex-col flex-1 overflow-hidden bg-white rounded-md shadow-lg max  md:flex-1 lg:max-w-screen-lg"
       >
         {/* Ex-student Biodata Collection */}
         <div className="p-5 bg-white md:flex-1">
@@ -49,31 +50,30 @@ const Form = () => {
                 </button>
                 <ul className="dropdown-menu absolute hidden text-gray-700 pt-1">
                     <li className="">
-                          <a href="#root" className="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Male</a></li>
+                          <Link to="#root" className="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Male</Link></li>
                     <li className="">
-                          <a href="#root" className="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Female</a></li>
+                          <Link to="#root" className="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Female</Link></li>
                     <li className="">
-                          <a href="#root" className="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Other</a></li>
+                          <Link to="#root" className="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Other</Link></li>
                 </ul>
             </div>
             {/* DropDown Ends */}
-            </div>
+            </div>  
             <div className="flex flex-col space-y-1">
               <div className="flex items-center justify-between">
                 <label for="password" className="text-sm font-semibold text-gray-500 required">Maritial Status</label>
               </div>
-              
             <div className="dropdown inline-block relative w-fit ">
                 <button className="bg-gray-300 text-gray-700 font-semibold py-2 px-4 rounded inline-flex items-center">
                     <span className="mr-1">Choose</span>
                     <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
                 </button>
-                <ul className="dropdown-menu absolute hidden text-gray-700 pt-1">
+                 <ul className="dropdown-menu absolute hidden text-gray-700 pt-1">
                     <li className="">
-                          <a href="#root" className="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Married</a></li>
+                          <Link to="#root" className="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Married</Link></li>
                     <li className="">
-                          <a href="#root" className="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Unmarried</a></li>
-                </ul>
+                          <Link to="#root" className="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Unmarried</Link></li>
+                </ul> 
             </div>
             </div>
             </span>
@@ -253,13 +253,13 @@ const Form = () => {
                 </button>
                 <ul className="w-max dropdown-menu absolute hidden text-gray-700 pt-1">
                     <li className="w-max">
-                          <a href="#root" className="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Private</a></li>
+                          <Link to="#root" className="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Private</Link></li>
                     <li className="">
-                          <a href="#root" className="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Goverment</a></li>
+                          <Link to="#root" className="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Goverment</Link></li>
                     <li className="">
-                          <a href="#root" className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Freelance</a></li>
+                          <Link to="#root" className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Freelance</Link></li>
                     <li className="">
-                          <a href="#root" className="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Entrepreneur (you own a bussiness ) </a></li>
+                          <Link to="#root" className="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Entrepreneur (you own a bussiness ) </Link></li>
                 </ul>
             </div>
             {/* DropDown Ends */}
@@ -275,71 +275,71 @@ const Form = () => {
                 </button>
                 <ul className="w-max dropdown-menu absolute hidden text-gray-700 pt-1">
                     <li className="">
-                          <a href="#root" className="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Manufacturing</a></li>
+                          <Link to="#root" className="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Manufacturing</Link></li>
                     <li className="">
-                          <a href="#root" className="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Sports</a></li>
+                          <Link to="#root" className="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Sports</Link></li>
                     <li className="">
-                          <a href="#root" className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Technology</a></li>
+                          <Link to="#root" className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Technology</Link></li>
                     <li className="">
-                          <a href="#root" className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Health Care</a></li>
+                          <Link to="#root" className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Health Care</Link></li>
                     <li className="">
-                          <a href="#root" className="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Finance</a></li>
+                          <Link to="#root" className="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Finance</Link></li>
                     <li className="">
-                          <a href="#root" className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Stock Market</a></li>
+                          <Link to="#root" className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Stock Market</Link></li>
                     <li className="">
-                          <a href="#root" className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Economics</a></li>
+                          <Link to="#root" className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Economics</Link></li>
                     <li className="">
-                          <a href="#root" className="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Computer and IT</a></li>
+                          <Link to="#root" className="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Computer and IT</Link></li>
                     <li className="">
-                          <a href="#root" className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Construction</a></li>
+                          <Link to="#root" className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Construction</Link></li>
                     <li className="">
-                          <a href="#root" className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Energy</a></li>
+                          <Link to="#root" className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Energy</Link></li>
                     <li className="">
-                          <a href="#root" className="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" > Telecommunications</a></li>
+                          <Link to="#root" className="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" > Telecommunications</Link></li>
                     <li className="">
-                          <a href="#root" className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Agriculture</a></li>
+                          <Link to="#root" className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Agriculture</Link></li>
                     <li className="">
-                          <a href="#root" className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Manufacturing</a></li>
+                          <Link to="#root" className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Manufacturing</Link></li>
                     <li className="">
-                          <a href="#root" className="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Retail</a></li>
+                          <Link to="#root" className="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Retail</Link></li>
                     <li className="">
-                          <a href="#root" className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Communication</a></li>
+                          <Link to="#root" className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Communication</Link></li>
                     <li className="">
-                          <a href="#root" className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Hospitality</a></li>
+                          <Link to="#root" className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Hospitality</Link></li>
                     <li className="">
-                          <a href="#root" className="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Financial Services</a></li>
+                          <Link to="#root" className="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Financial Services</Link></li>
                     <li className="">
-                          <a href="#root" className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Real Estate</a></li>
+                          <Link to="#root" className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Real Estate</Link></li>
                     <li className="">
-                          <a href="#root" className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Transport</a></li>
+                          <Link to="#root" className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Transport</Link></li>
                     <li className="">
-                          <a href="#root" className="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Mining</a></li>
+                          <Link to="#root" className="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Mining</Link></li>
                     <li className="">
-                          <a href="#root" className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Food</a></li>
+                          <Link to="#root" className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Food</Link></li>
                     <li className="">
-                          <a href="#root" className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >E-commerce</a></li>
+                          <Link to="#root" className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >E-commerce</Link></li>
                     <li className="">
-                          <a href="#root" className="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Medical Devices</a></li>
+                          <Link to="#root" className="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Medical Devices</Link></li>
                     <li className="">
-                          <a href="#root" className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Aviation</a></li>
+                          <Link to="#root" className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Aviation</Link></li>
                     <li className="">
-                          <a href="#root" className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Engeneering</a></li>
+                          <Link to="#root" className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Engeneering</Link></li>
                     <li className="">
-                          <a href="#root" className="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Pharmaceutical</a></li>
+                          <Link to="#root" className="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Pharmaceutical</Link></li>
                     <li className="">
-                          <a href="#root" className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Research</a></li>
+                          <Link to="#root" className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Research</Link></li>
                     <li className="">
-                          <a href="#root" className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Health</a></li>
+                          <Link to="#root" className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Health</Link></li>
                     <li className="">
-                          <a href="#root" className="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Logistics</a></li>
+                          <Link to="#root" className="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Logistics</Link></li>
                     <li className="">
-                          <a href="#root" className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Insurance</a></li>
+                          <Link to="#root" className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Insurance</Link></li>
                     <li className="">
-                          <a href="#root" className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Defence/Police</a></li>
+                          <Link to="#root" className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Defence/Police</Link></li>
                     <li className="">
-                          <a href="#root" className="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Judiciary</a></li>
+                          <Link to="#root" className="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Judiciary</Link></li>
                     <li className="">
-                          <a href="#root" className="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Other</a></li>
+                          <Link to="#root" className="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Other</Link></li>
                 </ul>
             </div>
             {/* DropDown Ends */}
@@ -367,27 +367,27 @@ const Form = () => {
                 </button>
                 <ul className="w-max dropdown-menu absolute hidden text-gray-700 pt-1">
                     <li className="w-max">
-                          <a href="#root" className="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >HR</a></li>
+                          <Link to="#root" className="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >HR</Link></li>
                     <li className="">
-                          <a href="#root" className="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Manufacturing</a></li>
+                          <Link to="#root" className="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Manufacturing</Link></li>
                     <li className="">
-                          <a href="#root" className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Accounting, Finance</a></li>
+                          <Link to="#root" className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Accounting, Finance</Link></li>
                     <li className="">
-                          <a href="#root" className="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Legal</a></li>
+                          <Link to="#root" className="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Legal</Link></li>
                     <li className="">
-                          <a href="#root" className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Supply Chain and Procurement</a></li>
+                          <Link to="#root" className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Supply Chain and Procurement</Link></li>
                     <li className="">
-                          <a href="#root" className="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Bussiness Process</a></li>
+                          <Link to="#root" className="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Bussiness Process</Link></li>
                     <li className="">
-                          <a href="#root" className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >IT</a></li>
+                          <Link to="#root" className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >IT</Link></li>
                     <li className="">
-                          <a href="#root" className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Engineering</a></li>
+                          <Link to="#root" className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Engineering</Link></li>
                     <li className="">
-                          <a href="#root" className="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Medical</a></li>
+                          <Link to="#root" className="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Medical</Link></li>
                     <li className="">
-                          <a href="#root" className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Administration</a></li>
+                          <Link to="#root" className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Administration</Link></li>
                     <li className="">
-                          <a href="#root" className="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Others</a></li>
+                          <Link to="#root" className="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Others</Link></li>
                 </ul>
             </div>
             {/* DropDown Ends */}
@@ -498,7 +498,7 @@ const Form = () => {
         </div>
         {/* QUALIFICATION DETAILS */}
         <div className="p-5 bg-white md:flex-1">
-          <h1 className="my-4 text-2xl font-semibold text-gray-700">Qualifiacation Details</h1>
+          <h1 className="my-4 text-2xl font-semibold text-gray-700">Qualification Details</h1>
           <form action="#" className="flex flex-col space-y-5">
             {/* Qualifications Completed (Degrees, Diplomas etc.) */}
             <div className="flex flex-col space-y-1">
@@ -637,7 +637,6 @@ const Form = () => {
         </div>
       </div>
     </div>
-    
     </>
   )
 }

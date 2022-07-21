@@ -3,9 +3,7 @@ import React from 'react'
 function Login() {
   return (
     <div class="flex items-center min-h-screen p-8 bg-gray-100 lg:justify-center">
-      <div
-        class="flex flex-col flex-1 overflow-hidden bg-white rounded-md shadow-lg max md:flex-row md:flex-1 lg:max-w-screen-md"
-      >
+      <div class="flex flex-col flex-1 overflow-hidden bg-white rounded-md shadow-lg max md:flex-1 lg:max-w-screen-sm">
         <div class="p-5 bg-white md:flex-1">
           <h3 class="my-4 text-2xl font-semibold text-gray-700">Account Login</h3>
           <form action="#" class="flex flex-col space-y-5">
@@ -33,7 +31,7 @@ function Login() {
               <input
                 type="checkbox"
                 id="remember"
-                class="w-4 h-4 transition duration-300 rounded focus:ring-2 focus:ring-offset-0 focus:outline-none focus:ring-blue-200"
+                class="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200"
               />
               <label for="remember" class="text-sm font-semibold text-gray-500">Remember me</label>
             </div>
@@ -67,4 +65,4 @@ function Login() {
   )
 }
 
-export default Login
+export default Login ;
