@@ -1,38 +1,35 @@
-import React from 'react'
+import React from 'react';
+import "./Form.css"
 import { Link } from 'react-router-dom';
-import './Form.css';
 
 const Form = () => {
   return (
     <>
         <div className="flex items-center min-h-screen p-8 bg-gray-100 lg:justify-center">
-      <div
-        className="flex flex-col flex-1 overflow-hidden bg-white rounded-md shadow-lg max  md:flex-1 lg:max-w-screen-lg"
-      >
+      <div className="flex flex-col flex-1 overflow-hidden bg-white rounded-md shadow-lg max  md:flex-1 lg:max-w-screen-lg" >
         {/* Ex-student Biodata Collection */}
         <div className="p-5 bg-white md:flex-1">
           <h1 className="my-4 text-2xl font-semibold text-gray-700">Ex-student Biodata Collection </h1>
           <form action="#" className="flex flex-col space-y-5">
             {/* Name */}
             <div className="flex flex-col space-y-1">
-              <label for="name" className="text-sm font-semibold text-gray-500 required">Name</label>
-              <input
-                type="text"
+              <label htmlFor="name" className="text-sm font-semibold text-gray-500 required">Name</label>
+              <input type="text"
                 id="name"
                 required
-                autofocus
+                autoFocus
                 className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
               />
             </div>
             {/* Age */}
             <div className="flex flex-col space-y-1">
               <div className="flex items-center justify-between">
-                <label for="age" className="text-sm font-semibold text-gray-500 required">Age</label>
+                <label htmlFor="age" className="text-sm font-semibold text-gray-500 required">Age</label>
               </div>
               <input
                 type="number"
                 id="age"
-                autofocus
+                autoFocus
                 required
                 className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
               />
@@ -41,27 +38,27 @@ const Form = () => {
             <span className='flex justify-around'>
             {/* Gender */}
             <div className="flex flex-col space-y-1">
-              <label for="name" className="text-sm font-semibold text-gray-500 required">Gender</label>
+              <label htmlFor="name" className="text-sm font-semibold text-gray-500 required">Gender</label>
             {/* DropDown Begins */}
               <div className="dropdown inline-block relative w-fit ">
                 <button className="bg-gray-300 text-gray-700 font-semibold py-2 px-4 rounded inline-flex items-center">
                     <span className="mr-1">Choose</span>
                     <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
                 </button>
-                <ul className="dropdown-menu absolute hidden text-gray-700 pt-1">
+                <ul className="dropdown-menu  absolute hidden text-gray-700 pt-1">
                     <li className="">
-                          <Link to="#root" className="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Male</Link></li>
+                          <button   className="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Male</button></li>
                     <li className="">
-                          <Link to="#root" className="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Female</Link></li>
+                          <button   className="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Female</button></li>
                     <li className="">
-                          <Link to="#root" className="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Other</Link></li>
+                          <button   className="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Other</button></li>
                 </ul>
             </div>
             {/* DropDown Ends */}
             </div>  
             <div className="flex flex-col space-y-1">
               <div className="flex items-center justify-between">
-                <label for="password" className="text-sm font-semibold text-gray-500 required">Maritial Status</label>
+                <label htmlFor="password" className="text-sm font-semibold text-gray-500 required">Maritial Status</label>
               </div>
             <div className="dropdown inline-block relative w-fit ">
                 <button className="bg-gray-300 text-gray-700 font-semibold py-2 px-4 rounded inline-flex items-center">
@@ -70,86 +67,86 @@ const Form = () => {
                 </button>
                  <ul className="dropdown-menu absolute hidden text-gray-700 pt-1">
                     <li className="">
-                          <Link to="#root" className="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Married</Link></li>
+                          <button className="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Married</button></li>
                     <li className="">
-                          <Link to="#root" className="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Unmarried</Link></li>
+                          <button className="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Unmarried</button></li>
                 </ul> 
             </div>
             </div>
             </span>
             {/* Phone Number Calling */}
             <div className="flex flex-col space-y-1">
-              <label for="phone-number" className="text-sm font-semibold text-gray-500 required">Phone Number ( Calling )</label>
+              <label htmlFor="phone-number" className="text-sm font-semibold text-gray-500 required">Phone Number ( Calling )</label>
               <input
                 type="number"
                 id="phone-call"
-                autofocus
+                autoFocus
                 required
                 className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
               />
             </div>
             {/* Phone Number Whatsapp */}
             <div className="flex flex-col space-y-1">
-              <label for="phone-number" className="text-sm font-semibold text-gray-500">Phone Number ( Whatsapp )</label>
+              <label htmlFor="phone-number" className="text-sm font-semibold text-gray-500">Phone Number ( Whatsapp )</label>
               <input
                 type="number"
                 id="phone-whatsapp"
-                autofocus
+                autoFocus
                 className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
               />
             </div>
             {/* Email*/}
             <div className="flex flex-col space-y-1">
-              <label for="email" className="text-sm font-semibold text-gray-500">Email address</label>
+              <label htmlFor="email" className="text-sm font-semibold text-gray-500">Email address</label>
               <input
                 type="email"
                 id="email"
-                autofocus
+                autoFocus
                 className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
               />
             </div>
             {/* Address */}
             <div className="flex flex-col space-y-1">
               <div className="flex items-center justify-between">
-                <label for="address" className="text-sm font-semibold text-gray-500 required">Address</label>
+                <label htmlFor="address" className="text-sm font-semibold text-gray-500 required">Address</label>
               </div>
               <input
                 type="text"
                 id="address"
-                autofocus
+                autoFocus
                 required
                 className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
               />
             </div>
             {/* City */}
             <div className="flex flex-col space-y-1">
-              <label for="city" className="text-sm font-semibold text-gray-500 required">City</label>
+              <label htmlFor="city" className="text-sm font-semibold text-gray-500 required">City</label>
               <input
                 type="text"
                 id="city"
                 required
-                autofocus
+                autoFocus
                 className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
               />
             </div>
             {/* State */}
             <div className="flex flex-col space-y-1">
-              <label for="city" className="text-sm font-semibold text-gray-500 required">City</label>
+              <label htmlFor="state" className="text-sm font-semibold text-gray-500 required">City</label>
               <input
                 type="text"
-                id="city"
-                autofocus
+                id="state"
+                autoFocus
                 required
                 className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
               />
             </div>
             {/* Country */}
             <div className="flex flex-col space-y-1">
-              <label for="country" className="text-sm font-semibold text-gray-500 required">Country</label>
+              <label htmlFor="country" className="text-sm font-semibold text-gray-500 required">Country</label>
               <input
                 type="text"
                 id="country"
-                autofocus
+                autoFocus
                 required
                 className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
               />
@@ -162,46 +159,46 @@ const Form = () => {
           <form action="#" className="flex flex-col space-y-5">
             {/* Name of the institute */}
             <div className="flex flex-col space-y-1">
-              <label for="name" className="text-sm font-semibold text-gray-500 required">Name of the institute</label>
+              <label htmlFor="name" className="text-sm font-semibold text-gray-500 required">Name of the institute</label>
               <input
                 type="text"
                 id="institute-name"
                 required
-                autofocus
+                autoFocus
                 className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
               />
             </div>
             {/* Course you were enrolled in */}
             <div className="flex flex-col space-y-1">
               <div className="flex items-center justify-between">
-                <label for="course" className="text-sm font-semibold text-gray-500 required">Course you were enrolled in</label>
+                <label htmlFor="course" className="text-sm font-semibold text-gray-500 required">Course you were enrolled in</label>
               </div>
               <input
                 type="text"
                 id="course-enrolled"
-                autofocus
+                autoFocus
                 required
                 className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
               />
             </div>
             {/* Duration during which you studied at a institute (specify the number of years, or months.) */}
             <div className="flex flex-col space-y-1">
-              <label for="course-duration" className="text-sm font-semibold text-gray-500 required">Duration during which you studied at a institute (specify the number of years, or months.)</label>
+              <label htmlFor="course-duration" className="text-sm font-semibold text-gray-500 required">Duration during which you studied at a institute (specify the number of years, or months.)</label>
               <input
                 type="text"
                 id="course-duration"
-                autofocus
+                autoFocus
                 required
                 className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
               />
             </div>
             {/* Admission number (at the institute, if you don't remember, leave blank.) */}
             <div className="flex flex-col space-y-1">
-              <label for="admission-number" className="text-sm font-semibold text-gray-500">Admission number (at the institute, if you don't remember, leave blank.)</label>
+              <label htmlFor="admission-number" className="text-sm font-semibold text-gray-500">Admission number (at the institute, if you don't remember, leave blank.)</label>
               <input
                 type="number"
                 id="admission-number"
-                autofocus
+                autoFocus
                 className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
               />
             </div>
@@ -213,30 +210,30 @@ const Form = () => {
           <form action="#" className="flex flex-col space-y-5">
             {/* What most accurately describes your current position? */}
             <div className="flex flex-col space-y-1">
-              <label for="name" className="text-sm font-semibold text-gray-500 required">What most accurately describes your current position?</label>
+              <label htmlFor="name" className="text-sm font-semibold text-gray-500 required">What most accurately describes your current position?</label>
               <div className="flex flex-col gap-2 ">
                 <span>
-                    <input type="radio" id="position-job" required autofocus className="w-fit mr-2 px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-blue-200" />
+                    <input type="radio" id="position-job" required autoFocus className="w-fit mr-2 px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-blue-200" />
                     <label className="text-sm font-semibold text-gray-500 ">Job</label>
                 </span>
                 <span>
-                    <input type="radio" id="position-student" required autofocus className="w-fit mr-2 px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-blue-200" />
+                    <input type="radio" id="position-student" required autoFocus className="w-fit mr-2 px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-blue-200" />
                     <label className="text-sm font-semibold text-gray-500 ">Student</label>
                 </span>
                 <span>
-                    <input type="radio" id="position-bussiness" required autofocus className="w-fit mr-2 px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-blue-200" />
+                    <input type="radio" id="position-bussiness" required autoFocus className="w-fit mr-2 px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-blue-200" />
                     <label className="text-sm font-semibold text-gray-500 ">Businness</label>
                 </span>
                 <span>
-                    <input type="radio" id="position-unemployed" required autofocus className="w-fit mr-2 px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-blue-200" />
+                    <input type="radio" id="position-unemployed" required autoFocus className="w-fit mr-2 px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-blue-200" />
                     <label className="text-sm font-semibold text-gray-500 ">Unemployed</label>
                 </span>
                 <span className='flex gap-20 align-center'>
                   <span >
-                      <input type="radio" id="position-other" required autofocus className="w-fit mr-2 px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none  focus:ring-blue-200" />
+                      <input type="radio" id="position-other" required autoFocus className="w-fit mr-2 px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none  focus:ring-blue-200" />
                       <label className="text-sm font-semibold text-gray-500 ">Other</label>
                   </span>
-                  <input type="number" id="position-other-value" autofocus required className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200" />
+                  <input type="number" id="position-other-value" autoFocus required className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200" />
                 </span>
               </div>
             </div>
@@ -244,29 +241,29 @@ const Form = () => {
             <span className='flex space-y-2 justify-around'>
             {/* What is your Job Type? */}
             <div className="flex flex-col space-y-1">
-              <label for="name" className="text-sm font-semibold text-gray-500 required">What is your Job Type?</label>
+              <label htmlFor="name" className="text-sm font-semibold text-gray-500 required">What is your Job Type?</label>
             {/* DropDown Begins */}
               <div className="dropdown inline-block relative w-fit ">
                 <button className="bg-gray-300 text-gray-700 font-semibold py-2 px-4 rounded inline-flex items-center">
                     <span className="mr-1">Choose</span>
                     <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
                 </button>
-                <ul className="w-max dropdown-menu absolute hidden text-gray-700 pt-1">
-                    <li className="w-max">
-                          <Link to="#root" className="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Private</Link></li>
+                <ul className="w-max  dropdown-menu absolute hidden text-gray-700 pt-1">
                     <li className="">
-                          <Link to="#root" className="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Goverment</Link></li>
+                          <div  className=" rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Private</div></li>
                     <li className="">
-                          <Link to="#root" className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Freelance</Link></li>
+                          <div   className="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Goverment</div></li>
                     <li className="">
-                          <Link to="#root" className="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Entrepreneur (you own a bussiness ) </Link></li>
+                          <div   className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Freelance</div></li>
+                    <li className="">
+                          <div   className="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Entrepreneur (you own a bussiness ) </div></li>
                 </ul>
             </div>
             {/* DropDown Ends */}
             </div>
             {/* What is your Job Sector? */}
             <div className="flex flex-col space-y-1">
-              <label for="name" className="text-sm font-semibold text-gray-500 required">What is your Job Sector?</label>
+              <label htmlFor="name" className="text-sm font-semibold text-gray-500 required">What is your Job Sector?</label>
             {/* DropDown Begins */}
               <div className="dropdown inline-block relative w-fit ">
                 <button className="bg-gray-300 text-gray-700 font-semibold py-2 px-4 rounded inline-flex items-center">
@@ -275,71 +272,71 @@ const Form = () => {
                 </button>
                 <ul className="w-max dropdown-menu absolute hidden text-gray-700 pt-1">
                     <li className="">
-                          <Link to="#root" className="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Manufacturing</Link></li>
+                          <div   className="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Manufacturing</div></li>
                     <li className="">
-                          <Link to="#root" className="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Sports</Link></li>
+                          <div   className="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Sports</div></li>
                     <li className="">
-                          <Link to="#root" className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Technology</Link></li>
+                          <div   className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Technology</div></li>
                     <li className="">
-                          <Link to="#root" className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Health Care</Link></li>
+                          <div   className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Health Care</div></li>
                     <li className="">
-                          <Link to="#root" className="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Finance</Link></li>
+                          <div   className="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Finance</div></li>
                     <li className="">
-                          <Link to="#root" className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Stock Market</Link></li>
+                          <div   className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Stock Market</div></li>
                     <li className="">
-                          <Link to="#root" className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Economics</Link></li>
+                          <div   className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Economics</div></li>
                     <li className="">
-                          <Link to="#root" className="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Computer and IT</Link></li>
+                          <div   className="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Computer and IT</div></li>
                     <li className="">
-                          <Link to="#root" className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Construction</Link></li>
+                          <div   className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Construction</div></li>
                     <li className="">
-                          <Link to="#root" className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Energy</Link></li>
+                          <div   className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Energy</div></li>
                     <li className="">
-                          <Link to="#root" className="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" > Telecommunications</Link></li>
+                          <div   className="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" > Telecommunications</div></li>
                     <li className="">
-                          <Link to="#root" className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Agriculture</Link></li>
+                          <div   className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Agriculture</div></li>
                     <li className="">
-                          <Link to="#root" className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Manufacturing</Link></li>
+                          <div   className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Manufacturing</div></li>
                     <li className="">
-                          <Link to="#root" className="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Retail</Link></li>
+                          <div   className="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Retail</div></li>
                     <li className="">
-                          <Link to="#root" className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Communication</Link></li>
+                          <div   className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Communication</div></li>
                     <li className="">
-                          <Link to="#root" className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Hospitality</Link></li>
+                          <div   className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Hospitality</div></li>
                     <li className="">
-                          <Link to="#root" className="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Financial Services</Link></li>
+                          <div   className="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Financial Services</div></li>
                     <li className="">
-                          <Link to="#root" className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Real Estate</Link></li>
+                          <div   className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Real Estate</div></li>
                     <li className="">
-                          <Link to="#root" className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Transport</Link></li>
+                          <div   className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Transport</div></li>
                     <li className="">
-                          <Link to="#root" className="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Mining</Link></li>
+                          <div   className="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Mining</div></li>
                     <li className="">
-                          <Link to="#root" className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Food</Link></li>
+                          <div   className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Food</div></li>
                     <li className="">
-                          <Link to="#root" className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >E-commerce</Link></li>
+                          <div   className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >E-commerce</div></li>
                     <li className="">
-                          <Link to="#root" className="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Medical Devices</Link></li>
+                          <div   className="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Medical Devices</div></li>
                     <li className="">
-                          <Link to="#root" className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Aviation</Link></li>
+                          <div   className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Aviation</div></li>
                     <li className="">
-                          <Link to="#root" className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Engeneering</Link></li>
+                          <div   className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Engeneering</div></li>
                     <li className="">
-                          <Link to="#root" className="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Pharmaceutical</Link></li>
+                          <div   className="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Pharmaceutical</div></li>
                     <li className="">
-                          <Link to="#root" className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Research</Link></li>
+                          <div   className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Research</div></li>
                     <li className="">
-                          <Link to="#root" className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Health</Link></li>
+                          <div   className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Health</div></li>
                     <li className="">
-                          <Link to="#root" className="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Logistics</Link></li>
+                          <div   className="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Logistics</div></li>
                     <li className="">
-                          <Link to="#root" className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Insurance</Link></li>
+                          <div   className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Insurance</div></li>
                     <li className="">
-                          <Link to="#root" className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Defence/Police</Link></li>
+                          <div   className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Defence/Police</div></li>
                     <li className="">
-                          <Link to="#root" className="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Judiciary</Link></li>
+                          <div   className="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Judiciary</div></li>
                     <li className="">
-                          <Link to="#root" className="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Other</Link></li>
+                          <div   className="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Other</div></li>
                 </ul>
             </div>
             {/* DropDown Ends */}
@@ -347,18 +344,18 @@ const Form = () => {
             </span>
             {/* If Others, Please specify (Please specifically mention if you're working in a government organization or anything not in the list) */}
             <div className="flex flex-col space-y-1">
-              <label for="phone-number" className="text-sm font-semibold text-gray-500 required">If Others, Please specify (Please specifically mention if you're working in a government organization or anything not in the list)</label>
+              <label htmlFor="phone-number" className="text-sm font-semibold text-gray-500 required">If Others, Please specify (Please specifically mention if you're working in a government organization or anything not in the list)</label>
               <input
                 type="text"
                 id="other-job-sector"
-                autofocus
+                autoFocus
                 required
                 className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
               />
             </div>
             {/* Job Domain */}
             <div className="flex flex-col space-y-1">
-              <label for="name" className="text-sm font-semibold text-gray-500 required">What is your Job Domain?</label>
+              <label htmlFor="name" className="text-sm font-semibold text-gray-500 required">What is your Job Domain?</label>
             {/* DropDown Begins */}
               <div className="dropdown inline-block relative w-fit ">
                 <button className="bg-gray-300 text-gray-700 font-semibold py-2 px-4 rounded inline-flex items-center">
@@ -367,50 +364,50 @@ const Form = () => {
                 </button>
                 <ul className="w-max dropdown-menu absolute hidden text-gray-700 pt-1">
                     <li className="w-max">
-                          <Link to="#root" className="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >HR</Link></li>
+                          <div className="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >HR</div></li>
                     <li className="">
-                          <Link to="#root" className="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Manufacturing</Link></li>
+                          <div className="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Manufacturing</div></li>
                     <li className="">
-                          <Link to="#root" className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Accounting, Finance</Link></li>
+                          <div className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Accounting, Finance</div></li>
                     <li className="">
-                          <Link to="#root" className="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Legal</Link></li>
+                          <div className="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Legal</div></li>
                     <li className="">
-                          <Link to="#root" className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Supply Chain and Procurement</Link></li>
+                          <div className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Supply Chain and Procurement</div></li>
                     <li className="">
-                          <Link to="#root" className="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Bussiness Process</Link></li>
+                          <div className="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Bussiness Process</div></li>
                     <li className="">
-                          <Link to="#root" className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >IT</Link></li>
+                          <div className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >IT</div></li>
                     <li className="">
-                          <Link to="#root" className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Engineering</Link></li>
+                          <div className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Engineering</div></li>
                     <li className="">
-                          <Link to="#root" className="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Medical</Link></li>
+                          <div className="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Medical</div></li>
                     <li className="">
-                          <Link to="#root" className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Administration</Link></li>
+                          <div className=" bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Administration</div></li>
                     <li className="">
-                          <Link to="#root" className="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Others</Link></li>
+                          <div className="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >Others</div></li>
                 </ul>
             </div>
             {/* DropDown Ends */}
             </div>
             {/* If Others, Please specify here*/}
             <div className="flex flex-col space-y-1">
-              <label for="other-job-domain" className="text-sm font-semibold text-gray-500">If Others, Please specify here</label>
+              <label htmlFor="other-job-domain-label" className="text-sm font-semibold text-gray-500">If Others, Please specify here</label>
               <input
                 type="text"
-                id="other-job-domain"
-                autofocus
+                name="other-job-domain-input"
+                autoFocus
                 className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
               />
             </div>
             {/* Designation */}
             <div className="flex flex-col space-y-1">
               <div className="flex items-center justify-between">
-                <label for="designation" className="text-sm font-semibold text-gray-500 required">Designation</label>
+                <label htmlFor="designation" className="text-sm font-semibold text-gray-500 required">Designation</label>
               </div>
               <input
                 type="text"
                 id="designation"
-                autofocus
+                autoFocus
                 required
                 className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
               />
@@ -418,12 +415,12 @@ const Form = () => {
             {/* Department */}
             <div className="flex flex-col space-y-1">
               <div className="flex items-center justify-between">
-                <label for="department" className="text-sm font-semibold text-gray-500 required">Department</label>
+                <label htmlFor="department" className="text-sm font-semibold text-gray-500 required">Department</label>
               </div>
               <input
                 type="text"
                 id="department"
-                autofocus
+                autoFocus
                 required
                 className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
               />
@@ -431,12 +428,12 @@ const Form = () => {
             {/* Company/Firm/Organization */}
             <div className="flex flex-col space-y-1">
               <div className="flex items-center justify-between">
-                <label for="company" className="text-sm font-semibold text-gray-500 required">Company/Firm/Organization</label>
+                <label htmlFor="company" className="text-sm font-semibold text-gray-500 required">Company/Firm/Organization</label>
               </div>
               <input
                 type="text"
                 id="company"
-                autofocus
+                autoFocus
                 required
                 className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
               />
@@ -444,12 +441,12 @@ const Form = () => {
             {/* City where you're working */}
             <div className="flex flex-col space-y-1">
               <div className="flex items-center justify-between">
-                <label for="working-city" className="text-sm font-semibold text-gray-500 required">City where you're working</label>
+                <label htmlFor="working-city" className="text-sm font-semibold text-gray-500 required">City where you're working</label>
               </div>
               <input
                 type="text"
                 id="working-city"
-                autofocus
+                autoFocus
                 required
                 className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
               />
@@ -457,12 +454,12 @@ const Form = () => {
             {/* State where you're working */}
             <div className="flex flex-col space-y-1">
               <div className="flex items-center justify-between">
-                <label for="working-state" className="text-sm font-semibold text-gray-500 required">State where you're working</label>
+                <label htmlFor="working-state" className="text-sm font-semibold text-gray-500 required">State where you're working</label>
               </div>
               <input
                 type="text"
                 id="working-state"
-                autofocus
+                autoFocus
                 required
                 className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
               />
@@ -470,12 +467,12 @@ const Form = () => {
             {/* Country where you're working */}
             <div className="flex flex-col space-y-1">
               <div className="flex items-center justify-between">
-                <label for="working-country" className="text-sm font-semibold text-gray-500 required">Country where you're working</label>
+                <label htmlFor="working-country" className="text-sm font-semibold text-gray-500 required">Country where you're working</label>
               </div>
               <input
                 type="text"
                 id="working-country"
-                autofocus
+                autoFocus
                 required
                 className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
               />
@@ -483,12 +480,12 @@ const Form = () => {
             {/* Experience (in Years and months) */}
             <div className="flex flex-col space-y-1">
               <div className="flex items-center justify-between">
-                <label for="working-experience" className="text-sm font-semibold text-gray-500 required">Experience (in Years and months)</label>
+                <label htmlFor="working-experience" className="text-sm font-semibold text-gray-500 required">Experience (in Years and months)</label>
               </div>
               <input
                 type="text"
                 id="working-experience"
-                autofocus
+                autoFocus
                 required
                 className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
               />
@@ -502,24 +499,24 @@ const Form = () => {
           <form action="#" className="flex flex-col space-y-5">
             {/* Qualifications Completed (Degrees, Diplomas etc.) */}
             <div className="flex flex-col space-y-1">
-              <label for="  " className="text-sm font-semibold text-gray-500 required">Qualifications Completed (Degrees, Diplomas etc.)</label>
+              <label htmlFor="  " className="text-sm font-semibold text-gray-500 required">Qualifications Completed (Degrees, Diplomas etc.)</label>
               <input
                 type="text"
                 id="qualifications-completed"
                 required
-                autofocus
+                autoFocus
                 className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
               />
             </div>
             {/* Institute where you completed your most recent qualification from */}
             <div className="flex flex-col space-y-1">
               <div className="flex items-center justify-between">
-                <label for="qualifications-completed-institute" className="text-sm font-semibold text-gray-500 required">Institute where you completed your most recent qualification from</label>
+                <label htmlFor="qualifications-completed-institute" className="text-sm font-semibold text-gray-500 required">Institute where you completed your most recent qualification from</label>
               </div>
               <input
                 type="text"
                 id="qualifications-completed-institute"
-                autofocus
+                autoFocus
                 required
                 className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
               />
@@ -532,35 +529,35 @@ const Form = () => {
           <form action="#" className="flex flex-col space-y-5">
             {/* Which degree /diploma program are you currently enrolled in? */}
             <div className="flex flex-col space-y-1">
-              <label for="ongoing-course" className="text-sm font-semibold text-gray-500 ">Which degree /diploma program are you currently enrolled in?</label>
+              <label htmlFor="ongoing-course" className="text-sm font-semibold text-gray-500 ">Which degree /diploma program are you currently enrolled in?</label>
               <input
                 type="text"
                 id="ongoing-course"
-                autofocus
+                autoFocus
                 className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
               />
             </div>
             {/* Area of Study */}
             <div className="flex flex-col space-y-1">
               <div className="flex items-center justify-between">
-                <label for="area-study" className="text-sm font-semibold text-gray-500 ">Area of Study</label>
+                <label htmlFor="area-study" className="text-sm font-semibold text-gray-500 ">Area of Study</label>
               </div>
               <input
                 type="text"
                 id="area-study"
-                autofocus
+                autoFocus
                 className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
               />
             </div>
             {/* Institution/University currently enrolled at. */}
             <div className="flex flex-col space-y-1">
               <div className="flex items-center justify-between">
-                <label for="currently-enrolled-institute" className="text-sm font-semibold text-gray-500 ">Institution/University currently enrolled at.</label>
+                <label htmlFor="currently-enrolled-institute" className="text-sm font-semibold text-gray-500 ">Institution/University currently enrolled at.</label>
               </div>
               <input
                 type="text"
                 id="currently-enrolled-institute"
-                autofocus
+                autoFocus
                 className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
               />
             </div>
@@ -572,61 +569,61 @@ const Form = () => {
             {/* Your skills, areas of expertise (that you could aid in.) */}
             <div className="flex flex-col space-y-1">
               <div className="flex items-center justify-between">
-                <label for="skills" className="text-sm font-semibold text-gray-500 required">Your skills, areas of expertise (that you could aid in.)</label>
+                <label htmlFor="skills" className="text-sm font-semibold text-gray-500 required">Your skills, areas of expertise (that you could aid in.)</label>
               </div>
               <input
                 type="text"
                 id="skills"
-                autofocus
+                autoFocus
                 required
                 className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
               />
             </div>
             {/* Are you already a member of any pakki sammitti/sewa group? */}
             <div className="flex flex-col space-y-1">
-              <label for="name" className="text-sm font-semibold text-gray-500 required">Are you already a member of any pakki sammitti/sewa group?</label>
+              <label htmlFor="name" className="text-sm font-semibold text-gray-500 required">Are you already a member of any pakki sammitti/sewa group?</label>
               <div className="flex flex-col gap-2 ">
                 <span>
-                    <input type="radio" id="sewa-member-yes" required autofocus className="w-fit mr-2 px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-blue-200" />
+                    <input type="radio" name="sewa-member-yes" required autoFocus className="w-fit mr-2 px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-blue-200" />
                     <label className="text-sm font-semibold text-gray-500 ">Yes</label>
                 </span>
                 <span>
-                    <input type="radio" id="sewa-member-yes" required autofocus className="w-fit mr-2 px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-blue-200" />
+                    <input type="radio" name="sewa-member-no" required autoFocus className="w-fit mr-2 px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-blue-200" />
                     <label className="text-sm font-semibold text-gray-500 ">No</label>
                 </span>
               </div>
             </div>
             {/* Any other information you want to share! (For eg. Achievements, Research experience, Sports or other awards) */}
             <div className="flex flex-col space-y-1">
-              <label for="another-info" className="text-sm font-semibold text-gray-500 required">Any other information you want to share! (For eg. Achievements, Research experience, Sports or other awards)</label>
+              <label htmlFor="another-info" className="text-sm font-semibold text-gray-500 required">Any other information you want to share! (For eg. Achievements, Research experience, Sports or other awards)</label>
               <input
                 type="text"
                 id="another-info"
-                autofocus
+                autoFocus
                 required
                 className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
               />
             </div>
             {/* Link to your CV/Resume/Portfolio etc. (only if you wish to. You can upload on Google Drive and share the link!) */}
             <div className="flex flex-col space-y-1">
-              <label for="other-job-domain" className="text-sm font-semibold text-gray-500">Link to your CV/Resume/Portfolio etc. (only if you wish to. You can upload on Google Drive and share the link!)
+              <label htmlFor="resume-link-label" className="text-sm font-semibold text-gray-500">Link to your CV/Resume/Portfolio etc. (only if you wish to. You can upload on Google Drive and share the link!)
 </label>
               <input
                 type="text"
-                id="other-job-domain"
-                autofocus
+                name="resume-link-input"
+                autoFocus
                 className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
               />
             </div>
             {/* Suggestions for Dera/Sewa (that could be implemented) */}
             <div className="flex flex-col space-y-1">
               <div className="flex items-center justify-between">
-                <label for="suggestion" className="text-sm font-semibold text-gray-500 required">Suggestions for Dera/Sewa (that could be implemented)</label>
+                <label htmlFor="suggestion" className="text-sm font-semibold text-gray-500 required">Suggestions for Dera/Sewa (that could be implemented)</label>
               </div>
               <input
                 type="text"
                 id="suggestion"
-                autofocus
+                autoFocus
                 required
                 className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
               />
@@ -641,4 +638,4 @@ const Form = () => {
   )
 }
 
-export default Form;
+export default Form ;
