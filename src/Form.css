@@ -1,0 +1,7 @@
+.dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  .required:after{
+    content: '*' ;
+    color: red;
+  }

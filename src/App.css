@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  accent-color: #66bfbf;
+  accent-color: #ff0063;
+  transition: all 0.2s ease;
+  font-family: "Roboto", sans-serif;
+}
+:root {
+  --light-blue: hsl(180, 30%, 50%);
+  --dark-blue: hsl(180, 20%, 57%);
+  --dark-pink: #ff0063;
+  --white: #fff;
+  --grey: #000;
+  --silver: #e5e5e5;
+  --black: #000;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(135deg, #ef32d9, #89fffd, #3ab4f2) no-repeat;
+  background-size: contain;
+  background-size: cover;
+  display: flex;
+}
+main {
+  height: 80%;
+  aspect-ratio: 3/2;
+  margin: auto;
+  display: grid;
+  background-color: white;
+  border-radius: 10px;
+  grid-template-columns: repeat(2, 1fr);
+  backdrop-filter: blur(100px);
+}
+.image {
+  background: url("/public/images/login.png"), linear-gradient(135deg, #ef32d9, #89fffd, #3ab4f2);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  overflow: hidden;
+  border-radius: 10px 0 0 10px;
+}
+.heading {
+  font-size: 3rem;
+  margin-inline: auto;
+}
+.sub-heading {
+  font-size: 1.5rem;
+  margin-inline: auto;
+}
+.forum {
+  height: clamp(50%, 500px, 90%);
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  gap: 2rem;
+  /* border-bottom: solid 2px var(--grey); */
+}
+.forum p {
+  font-size: 3rem;
+  margin: auto;
+}
+form {
+  width: 90%;
+  height: 75%;
+  margin-inline: auto;
+  /* background: pink; */
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  text-align: right;
+  margin: auto;
+}
+input {
+  border: none;
+  background: rgba(120, 120, 120, 0.05);
+  background: white;
+  border-radius: 2px;
+  border-bottom: solid 2px var(--grey);
+}
+.username,
+.password {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 1.15rem;
+  text-align: left;
+}
+
+label,
+input {
+  font-size: inherit;
+  padding: 0.5rem 0.75rem;
+}
+.fp {
+  display: inline;
+  position: relative;
+  right: 0;
+  margin-right: 0;
+  text-decoration: none;
+  color: var(--grey);
+}
+.btn {
+  background: linear-gradient(135deg, #ef32d9, #3ab4f2);
+  padding: 1rem 4rem;
+  border: none;
+  color: white;
+  border-radius: 100vmax;
+  font-size: 2rem;
+  margin: auto;
+  margin-bottom: 0;
+}
+
+@media (max-device-width: 1440px) {
+  main {
+    width: 90%;
+    aspect-ratio: 3/2;
+    background-color: white;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .forum {
+    margin: auto;
+  }
+}
+@media (max-device-width: 1200px) {
+  main {
+    width: 90%;
+    background-color: white;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .forum {
+    margin: auto;
+  }
+  .image {
+    display: block;
+  }
+}
+@media (max-device-width: 768px) {
+  main {
+    height: max-content;
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .forum {
+    width: 100%;
+  }
+  .image {
+    display: none;
+  }
+}
+@media (max-device-width: 480px) {
+  main {
+    height: max-content;
+    width: 95%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 1rem;
+  }
+  .forum {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+  form {
+    width: 95%;
+  }
+}
