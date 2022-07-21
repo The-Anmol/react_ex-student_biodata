@@ -528,7 +528,7 @@ const Form = () => {
         {/* ONGOING STUDY/QUALIFICATION DETAILS */}
         <div className="p-5 bg-white md:flex-1">
           <h1 className="my-4 text-2xl font-semibold text-gray-700">Ongoing Study/Qualifiacation Details</h1>
-          <form action="#" className="flex flex-col space-y-5">
+          <form action="" className="flex flex-col space-y-5">
             {/* Which degree /diploma program are you currently enrolled in? */}
             <div className="flex flex-col space-y-1">
               <label htmlFor="ongoing-course" className="text-sm font-semibold text-gray-500 ">Which degree /diploma program are you currently enrolled in?</label>
