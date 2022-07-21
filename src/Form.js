@@ -2,6 +2,9 @@ import React from 'react';
 import "./Form.css";
 
 const Form = () => {
+
+
+  console.log('from.js')
   return (
     <>
         <div className="flex items-center min-h-screen p-8 bg-gray-100 lg:justify-center">
