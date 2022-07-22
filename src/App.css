@@ -19,4 +19,9 @@
 }
 .show{
   display: flex;
+  justify-content: space-between;
+}
+.hide{
+  display: none;
+  justify-content: space-between;
 }
