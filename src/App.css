@@ -17,3 +17,6 @@
   --silver: #e5e5e5;
   --black: #000;
 }
+.show{
+  display: flex;
+}
