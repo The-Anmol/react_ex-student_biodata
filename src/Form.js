@@ -28,7 +28,7 @@ const Form = () => {
               <input
                 type="number"
                 id="age"
-                autoFocus
+                 
                 required
                 className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
               />
@@ -79,7 +79,7 @@ const Form = () => {
               <input
                 type="number"
                 id="phone-call"
-                autoFocus
+                 
                 required
                 className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
               />
@@ -90,7 +90,7 @@ const Form = () => {
               <input
                 type="number"
                 id="phone-whatsapp"
-                autoFocus
+                 
                 className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
               />
             </div>
@@ -100,7 +100,7 @@ const Form = () => {
               <input
                 type="email"
                 id="email"
-                autoFocus
+                 
                 className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
               />
             </div>
@@ -112,7 +112,7 @@ const Form = () => {
               <input
                 type="text"
                 id="address"
-                autoFocus
+                 
                 required
                 className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
               />
@@ -124,7 +124,7 @@ const Form = () => {
                 type="text"
                 id="city"
                 required
-                autoFocus
+                 
                 className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
               />
             </div>
@@ -134,7 +134,7 @@ const Form = () => {
               <input
                 type="text"
                 id="state"
-                autoFocus
+                 
                 required
                 className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
               />
@@ -145,7 +145,7 @@ const Form = () => {
               <input
                 type="text"
                 id="country"
-                autoFocus
+                 
                 required
                 className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
               />
@@ -163,7 +163,7 @@ const Form = () => {
                 type="text"
                 id="institute-name"
                 required
-                autoFocus
+                 
                 className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
               />
             </div>
@@ -175,7 +175,7 @@ const Form = () => {
               <input
                 type="text"
                 id="course-enrolled"
-                autoFocus
+                 
                 required
                 className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
               />
@@ -186,7 +186,7 @@ const Form = () => {
               <input
                 type="text"
                 id="course-duration"
-                autoFocus
+                 
                 required
                 className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
               />
@@ -197,7 +197,7 @@ const Form = () => {
               <input
                 type="number"
                 id="admission-number"
-                autoFocus
+                 
                 className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
               />
             </div>
@@ -212,27 +212,27 @@ const Form = () => {
               <label htmlFor="name" className="text-sm font-semibold text-gray-500 required">What most accurately describes your current position?</label>
               <div className="flex flex-col gap-2 ">
                 <span>
-                    <input type="radio" id="position-job" required autoFocus className="w-fit mr-2 px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-blue-200" />
+                    <input type="radio" id="position-job" required   className="w-fit mr-2 px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-blue-200" />
                     <label className="text-sm font-semibold text-gray-500 ">Job</label>
                 </span>
                 <span>
-                    <input type="radio" id="position-student" required autoFocus className="w-fit mr-2 px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-blue-200" />
+                    <input type="radio" id="position-student" required   className="w-fit mr-2 px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-blue-200" />
                     <label className="text-sm font-semibold text-gray-500 ">Student</label>
                 </span>
                 <span>
-                    <input type="radio" id="position-bussiness" required autoFocus className="w-fit mr-2 px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-blue-200" />
+                    <input type="radio" id="position-bussiness" required   className="w-fit mr-2 px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-blue-200" />
                     <label className="text-sm font-semibold text-gray-500 ">Businness</label>
                 </span>
                 <span>
-                    <input type="radio" id="position-unemployed" required autoFocus className="w-fit mr-2 px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-blue-200" />
+                    <input type="radio" id="position-unemployed" required   className="w-fit mr-2 px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-blue-200" />
                     <label className="text-sm font-semibold text-gray-500 ">Unemployed</label>
                 </span>
                 <span className='flex gap-20 align-center'>
                   <span >
-                      <input type="radio" id="position-other" required autoFocus className="w-fit mr-2 px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none  focus:ring-blue-200" />
+                      <input type="radio" id="position-other" required   className="w-fit mr-2 px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none  focus:ring-blue-200" />
                       <label className="text-sm font-semibold text-gray-500 ">Other</label>
                   </span>
-                  <input type="number" id="position-other-value" autoFocus required className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200" />
+                  <input type="number" id="position-other-value"   required className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200" />
                 </span>
               </div>
             </div>
@@ -347,7 +347,7 @@ const Form = () => {
               <input
                 type="text"
                 id="other-job-sector"
-                autoFocus
+                 
                 required
                 className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
               />
@@ -394,7 +394,7 @@ const Form = () => {
               <input
                 type="text"
                 name="other-job-domain-input"
-                autoFocus
+                 
                 className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
               />
             </div>
@@ -406,7 +406,7 @@ const Form = () => {
               <input
                 type="text"
                 id="designation"
-                autoFocus
+                 
                 required
                 className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
               />
@@ -419,7 +419,7 @@ const Form = () => {
               <input
                 type="text"
                 id="department"
-                autoFocus
+                 
                 required
                 className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
               />
@@ -432,7 +432,7 @@ const Form = () => {
               <input
                 type="text"
                 id="company"
-                autoFocus
+                 
                 required
                 className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
               />
@@ -445,7 +445,7 @@ const Form = () => {
               <input
                 type="text"
                 id="working-city"
-                autoFocus
+                 
                 required
                 className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
               />
@@ -458,7 +458,7 @@ const Form = () => {
               <input
                 type="text"
                 id="working-state"
-                autoFocus
+                 
                 required
                 className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
               />
@@ -471,7 +471,7 @@ const Form = () => {
               <input
                 type="text"
                 id="working-country"
-                autoFocus
+                 
                 required
                 className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
               />
@@ -484,7 +484,7 @@ const Form = () => {
               <input
                 type="text"
                 id="working-experience"
-                autoFocus
+                 
                 required
                 className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
               />
@@ -503,7 +503,7 @@ const Form = () => {
                 type="text"
                 id="qualifications-completed"
                 required
-                autoFocus
+                 
                 className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
               />
             </div>
@@ -515,7 +515,7 @@ const Form = () => {
               <input
                 type="text"
                 id="qualifications-completed-institute"
-                autoFocus
+                 
                 required
                 className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
               />
@@ -532,7 +532,7 @@ const Form = () => {
               <input
                 type="text"
                 id="ongoing-course"
-                autoFocus
+                 
                 className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
               />
             </div>
@@ -544,7 +544,7 @@ const Form = () => {
               <input
                 type="text"
                 id="area-study"
-                autoFocus
+                 
                 className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
               />
             </div>
@@ -556,7 +556,7 @@ const Form = () => {
               <input
                 type="text"
                 id="currently-enrolled-institute"
-                autoFocus
+                 
                 className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
               />
             </div>
@@ -573,7 +573,7 @@ const Form = () => {
               <input
                 type="text"
                 id="skills"
-                autoFocus
+                 
                 required
                 className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
               />
@@ -583,11 +583,11 @@ const Form = () => {
               <label htmlFor="name" className="text-sm font-semibold text-gray-500 required">Are you already a member of any pakki sammitti/sewa group?</label>
               <div className="flex flex-col gap-2 ">
                 <span>
-                    <input type="radio" name="sewa-member-yes" required autoFocus className="w-fit mr-2 px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-blue-200" />
+                    <input type="radio" name="sewa-member-yes" required   className="w-fit mr-2 px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-blue-200" />
                     <label className="text-sm font-semibold text-gray-500 ">Yes</label>
                 </span>
                 <span>
-                    <input type="radio" name="sewa-member-no" required autoFocus className="w-fit mr-2 px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-blue-200" />
+                    <input type="radio" name="sewa-member-no" required   className="w-fit mr-2 px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-blue-200" />
                     <label className="text-sm font-semibold text-gray-500 ">No</label>
                 </span>
               </div>
@@ -598,7 +598,7 @@ const Form = () => {
               <input
                 type="text"
                 id="another-info"
-                autoFocus
+                 
                 required
                 className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
               />
@@ -610,7 +610,7 @@ const Form = () => {
               <input
                 type="text"
                 name="resume-link-input"
-                autoFocus
+                 
                 className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
               />
             </div>
@@ -622,7 +622,7 @@ const Form = () => {
               <input
                 type="text"
                 id="suggestion"
-                autoFocus
+                 
                 required
                 className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
               />
