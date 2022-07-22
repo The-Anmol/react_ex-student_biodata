@@ -33,7 +33,7 @@ const Admin = () => {
                 <img  src="./Asset/Icon/filter.svg" height={25} width={25} alt="" />Filter
                </button>
                <div className='grid grid-cols-1 justify-between xl:grid-cols-2'>
-                <div className={filterToggled ? "hide" : "show"} >
+                <div className={filterToggled ? "show" : "hide"} >
                   <div className=' w-ful text-center justify-center mb-4'>
                       <div className='text-lg' >Educational Institutions</div>
                       <div className="flex items-center space-x-2 py-2">
