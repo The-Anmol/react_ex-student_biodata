@@ -4,19 +4,19 @@ import "./Form.css";
     
 const Edit = () => {
   
-const inputs = document.querySelectorAll("input");
-const requiredInputs = document.querySelectorAll('[required]');
-function disable(){
-  for(let i =0 ; i<inputs.length ; i++ ){
-    inputs[i].setAttribute("disabled","true");
-    inputs[i].removeAttribute("required");
-  }  
-}
-function enabled(){
-  for(let i =0 ; i<inputs.length ; i++ ){
-    inputs[i].setAttribute("disabled","false"); 
-  }  
-}
+// const inputs = document.querySelectorAll("input");
+// const requiredInputs = document.querySelectorAll('[required]');
+// function disable(){
+//   for(let i =0 ; i<inputs.length ; i++ ){
+//     inputs[i].setAttribute("disabled","true");
+//     inputs[i].removeAttribute("required");
+//   }  
+// }
+// function enabled(){
+//   for(let i =0 ; i<inputs.length ; i++ ){
+//     inputs[i].setAttribute("disabled","false"); 
+//   }  
+// }
 
   return (
     <>

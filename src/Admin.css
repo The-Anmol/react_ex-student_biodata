@@ -1,0 +1,18 @@
+ol{
+    counter-reset:list;
+}   
+ul{
+    counter-increment: list;
+    cursor: pointer;
+    user-select: none;
+
+}
+ul:before{
+    content: counter(list) ;
+    margin-left: 0;
+    position: relative;
+    left: 0;
+}
+button{
+    user-select: none;
+}
