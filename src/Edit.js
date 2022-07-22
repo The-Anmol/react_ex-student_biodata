@@ -1,16 +1,12 @@
-// import { isDisabled } from '@testing-library/user-event/dist/utils';
 import React from 'react';
 import "./Form.css";
 
 const Edit = () => {
 
-    var disabled=true;
     const inputs = document.querySelectorAll("input");
-    // console.log(inputs)
-    // for(let i = 0; i < inputs.length; i++){
-    //     console.log(inputs[i])
-    // }
-    console.log(inputs[5])
+    for(let i =0 ; i<inputs.length ; i++ ){
+      inputs[i].setAttribute("disabled",true);
+    }  
 
   return (
     <>
@@ -23,7 +19,7 @@ const Edit = () => {
             {/* Name */}
             <div className="flex flex-col space-y-1">
               <label htmlFor="name" className="text-sm font-semibold text-gray-500 required">Name</label>
-              <input type="text" disabled={disabled} 
+              <input type="text"  
                 id="name" required autoFocus className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
               />
             </div>
