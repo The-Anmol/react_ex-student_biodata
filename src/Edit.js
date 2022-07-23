@@ -1,49 +1,44 @@
-import React from 'react';
+import React, { useState  } from 'react'
 import "./Form.css";
 
     
 const Edit = () => {
-  
-// const inputs = document.querySelectorAll("input");
-// const requiredInputs = document.querySelectorAll('[required]');
-// function disable(){
-//   for(let i =0 ; i<inputs.length ; i++ ){
-//     inputs[i].setAttribute("disabled","true");
-//     inputs[i].removeAttribute("required");
-//   }  
-// }
-// function enabled(){
-//   for(let i =0 ; i<inputs.length ; i++ ){
-//     inputs[i].setAttribute("disabled","false"); 
-//   }  
-// }
+
+  let [ isDisabled , setIsDisabled ] = useState(true);
+  function disableInput(){
+    setIsDisabled(!isDisabled);
+    console.log(isDisabled);
+  }
+  function enableInput(){
+    setIsDisabled(!isDisabled);
+    console.log(isDisabled);
+    console.log("Edit Clicked");
+  }
 
   return (
     <>
-        <div className="flex items-center min-h-screen p-8 bg-gray-100 lg:justify-center" id='formBase'>
+        <div className="flex items-center min-h-screen p-8 bg-gray-100 lg:justify-center" id='formBase' onLoad={disableInput}>
       <div className="flex flex-col flex-1 overflow-hidden bg-white rounded-md shadow-lg max  md:flex-1 lg:max-w-screen-lg" >
         {/* Ex-student Biodata Collection */}
         <div className="p-5 bg-white md:flex-1">
-          <h1 className="my-4 text-2xl font-semibold text-gray-700">Ex-student Biodata Collection </h1>
+              <h1 className=" flex justify-between my-4 text-2xl font-semibold text-gray-700">Ex-student Biodata Collection 
+                  <button type="submit" onClick={enableInput} className="w-fit flex justify-between px-4 py-2 m-0 text-lg font-semibold text-white transition-colors duration-300 bg-gray-700 rounded-md shadow hover:bg-slate-800 focus:outline-none focus:ring-blue-200 focus:ring-4">
+                  <img className='self-center mr-1' src="./Asset/Icon/edit-white.svg" height={23} width={23} alt="" />Edit
+                  </button>
+              </h1>
           <form action="#" className="flex flex-col space-y-5">
             {/* Name */}
             <div className="flex flex-col space-y-1">
-              <label htmlFor="name" className="text-sm font-semibold text-gray-500 required">Name</label>
-              <input type="text"  value="Anmol" 
-                id="name" className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
-              />
+              <label  htmlFor="name" className="text-sm font-semibold text-gray-500 readOnly required">Name</label>
+              <input type="text" id="name" className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
+               disabled={`${ isDisabled ? "true" : "false" } `} />
             </div>
             {/* Age */}
             <div className="flex flex-col space-y-1">
               <div className="flex items-center justify-between">
                 <label htmlFor="age" className="text-sm font-semibold text-gray-500 required">Age</label>
               </div>
-              <input
-                type="number"
-                id="age"
-                 
-                required
-                className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
+              <input type="number" disabled={`${ isDisabled ? "true" : "false" } `}  id="age" className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
               />
             </div>
             {/* Gender And MArtial Status */}
@@ -640,21 +635,10 @@ const Edit = () => {
                 className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
               />
             </div>
-            <span className='grid grid-cols-2 gap-8 '>
-            <div>
-              <button
-                type="submit"
-                className="w-full px-4 py-2 text-lg font-semibold text-white transition-colors duration-300 bg-slate-700 rounded-md shadow hover:bg-slate-800 focus:outline-none focus:ring-blue-200 focus:ring-4"
-              >
-                Edit
-              </button>
-            </div>
-            <div>
-              <button
-                type="submit"
-                className="w-full px-4 py-2 text-lg font-semibold text-white transition-colors duration-300 bg-blue-500 rounded-md shadow hover:bg-blue-600 focus:outline-none focus:ring-blue-200 focus:ring-4"
-              >
-                Save
+            <span className=''>
+            <div className='flex justify-center'>
+              <button type="submit" className="flex w-max px-6 py-2 text-lg font-semibold text-white transition-colors duration-300 bg-blue-500 rounded-md shadow hover:bg-blue-600 focus:outline-none focus:ring-blue-200 focus:ring-4">
+              <img className='self-center mr-2' src="./Asset/Icon/save.svg" height={23} width={23} alt="" />Save
               </button>
             </div>
             </span>
@@ -669,6 +653,4 @@ const Edit = () => {
 }
 
 
-
 export default Edit ;
-

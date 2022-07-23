@@ -27,9 +27,7 @@ const Form = () => {
               </div>
               <input
                 type="number"
-                id="age"
-                 
-                required
+                id="age" required
                 className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
               />
             </div>
@@ -498,7 +496,7 @@ const Form = () => {
           <form action="#" className="flex flex-col space-y-5">
             {/* Qualifications Completed (Degrees, Diplomas etc.) */}
             <div className="flex flex-col space-y-1">
-              <label htmlFor="  " className="text-sm font-semibold text-gray-500 required">Qualifications Completed (Degrees, Diplomas etc.)</label>
+              <label className="text-sm font-semibold text-gray-500 required">Qualifications Completed (Degrees, Diplomas etc.)</label>
               <input
                 type="text"
                 id="qualifications-completed"
@@ -560,23 +558,18 @@ const Form = () => {
                 className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
               />
             </div>
+          </form>
+        </div>
             {/* Sewa Details*/}
         <div className="p-5 bg-white md:flex-1">
           <h1 className="my-4 text-2xl font-semibold text-gray-700">Sewa Details</h1>
           <form action="#" className="flex flex-col space-y-5">
-            
             {/* Your skills, areas of expertise (that you could aid in.) */}
             <div className="flex flex-col space-y-1">
               <div className="flex items-center justify-between">
                 <label htmlFor="skills" className="text-sm font-semibold text-gray-500 required">Your skills, areas of expertise (that you could aid in.)</label>
               </div>
-              <input
-                type="text"
-                id="skills"
-                 
-                required
-                className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
-              />
+              <input type="text" id="skills" required className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"/>
             </div>
             {/* Are you already a member of any pakki sammitti/sewa group? */}
             <div className="flex flex-col space-y-1">
@@ -595,52 +588,30 @@ const Form = () => {
             {/* Any other information you want to share! (For eg. Achievements, Research experience, Sports or other awards) */}
             <div className="flex flex-col space-y-1">
               <label htmlFor="another-info" className="text-sm font-semibold text-gray-500 required">Any other information you want to share! (For eg. Achievements, Research experience, Sports or other awards)</label>
-              <input
-                type="text"
-                id="another-info"
-                 
-                required
-                className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
-              />
+              <input type="text" id="another-info" required className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200" />
             </div>
             {/* Link to your CV/Resume/Portfolio etc. (only if you wish to. You can upload on Google Drive and share the link!) */}
             <div className="flex flex-col space-y-1">
-              <label htmlFor="resume-link-label" className="text-sm font-semibold text-gray-500">Link to your CV/Resume/Portfolio etc. (only if you wish to. You can upload on Google Drive and share the link!)
-</label>
-              <input
-                type="text"
-                name="resume-link-input"
-                 
-                className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
-              />
+              <label htmlFor="resume-link-label" className="text-sm font-semibold text-gray-500">Link to your CV/Resume/Portfolio etc. (only if you wish to. You can upload on Google Drive and share the link!)</label>
+              <input type="text" name="resume-link-input" className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"/>
             </div>
             {/* Suggestions for Dera/Sewa (that could be implemented) */}
             <div className="flex flex-col space-y-1">
               <div className="flex items-center justify-between">
                 <label htmlFor="suggestion" className="text-sm font-semibold text-gray-500 required">Suggestions for Dera/Sewa (that could be implemented)</label>
               </div>
-              <input
-                type="text"
-                id="suggestion"
-                 
-                required
-                className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
-              />
+              <input type="text" id="suggestion" required className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"/>
             </div>
+          </form>
             <span className='grid grid-cols-1 gap-8   '>
-              <button
-                type="submit"
-                className="w-full px-4 py-2 text-lg font-semibold text-white transition-colors duration-300 bg-blue-500 rounded-md shadow hover:bg-blue-600 focus:outline-none focus:ring-blue-200 focus:ring-4"
-              >
+              <button type="submit" className="w-full px-4 py-2 text-lg font-semibold text-white transition-colors duration-300 bg-blue-500 rounded-md shadow hover:bg-blue-600 focus:outline-none focus:ring-blue-200 focus:ring-4">
                 Submit
               </button>
             </span>
-          </form>
         </div>
-          </form>
-        </div>
+
       </div>
-    </div>
+      </div>
     </>
   )
 }
