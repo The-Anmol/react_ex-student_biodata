@@ -32,7 +32,8 @@ const Admin = () => {
             <button onClick={handleClick} className='mb-2 flex gap-2 text-md bg-white p-2'> 
                 <img  src="./Asset/Icon/filter.svg" height={25} width={25} alt="" />Filter
              </button>
-            <div className={`filters-grid flex flex-row 0-1200:flex-col ${ filterToggled ? "show" : "hide" } `} >
+             
+            <div  className={`flex flex-col ${ filterToggled ? "show" : "hide" } `} >
                         <div className='w-full text-center mb-4 flex-1'>
                             <div className='text-lg' >Educational Institutions</div>
                             <div className=" flex items-center space-x-2 py-2">

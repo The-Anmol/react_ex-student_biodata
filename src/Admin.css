@@ -22,9 +22,3 @@ button{
 .hide{
     display: none;
 }
-@media (min-device-width:1200px){
-    .filters-grid{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-    }
-}
