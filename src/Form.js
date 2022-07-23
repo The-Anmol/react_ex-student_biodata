@@ -1,4 +1,6 @@
 import React from 'react';
+
+import MaterialIcon from 'react-google-material-icons'
 import "./Form.css";
 
 const Form = () => {
@@ -614,7 +616,9 @@ const Form = () => {
             <span className=''>
             <div className='flex justify-center'>
               <button type="submit" className="flex w-max px-6 py-2 text-lg font-semibold text-white transition-colors duration-300 bg-blue-500 rounded-md shadow hover:bg-blue-600 focus:outline-none focus:ring-blue-200 focus:ring-4">
-              <img className='self-center mr-2' src="./Asset/Icon/save.svg" height={23} width={23} alt="" />Save
+              <div className='flex self-center mr-2 my-auto' >
+              <MaterialIcon icon="save" size={25} />
+              </div>Save
               </button>
             </div>
             </span>

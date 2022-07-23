@@ -1,36 +1,45 @@
 import React, { useState  } from 'react'
+import MaterialIcon from 'react-google-material-icons'
+
+
 import "./Form.css";
 
     
 const Edit = () => {
 
   let [ isDisabled , setIsDisabled ] = useState(true);
-  function disableInput(){
-    setIsDisabled(!isDisabled);
-    console.log(isDisabled);
-  }
+
+  
+  {/* <MaterialIcon icon="account_box" size={36}/> */}
+    
+  
   function enableInput(){
     setIsDisabled(!isDisabled);
     console.log(isDisabled);
     console.log("Edit Clicked");
+
+
+
   }
 
 return (
     <>
-        <div className="flex items-center min-h-screen p-8 bg-gray-100 lg:justify-center" id='formBase' onLoad={disableInput}>
+        <div className="flex items-center min-h-screen p-8 bg-gray-100  lg:justify-center" id='formBase' >
       <div className="flex flex-col flex-1 overflow-hidden bg-white rounded-md shadow-lg max  md:flex-1 lg:max-w-screen-lg" >
         {/* Ex-student Biodata Collection */}
         <div className="p-5 bg-white md:flex-1">
               <h1 className=" flex justify-between my-4 text-2xl font-semibold text-gray-700">Ex-student Biodata Collection 
                   <button type="submit" onClick={enableInput} className="w-fit flex justify-between px-4 py-2 m-0 text-lg font-semibold text-white transition-colors duration-300 bg-gray-700 rounded-md shadow hover:bg-slate-800 focus:outline-none focus:ring-blue-200 focus:ring-4">
-                  <img className='self-center mr-1' src="./Asset/Icon/edit-white.svg" height={23} width={23} alt="" />Edit
+                  <div className="flex self-center  mr-2 my-auto">
+                    <MaterialIcon icon="edit" size={20} />
+                  </div>Edit
                   </button>
               </h1>
           <form action="#" className="flex flex-col space-y-5">
             {/* Name */}
             <div className="flex flex-col space-y-1">
               <label  htmlFor="name" className="text-sm font-semibold text-gray-500 readOnly required">Name</label>
-              <input defaultValue={"Anmol"} disabled={`${ isDisabled ? "true" : "false" } `} type="text" id="name" className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
+              <input defaultValue={"Anmol"} disabled={isDisabled} type="text" id="name" className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
                 />
             </div>
             {/* Age */}
@@ -38,7 +47,7 @@ return (
               <div className="flex items-center justify-between">
                 <label htmlFor="age" className="text-sm font-semibold text-gray-500 required">Age</label>
               </div>
-              <input disabled={`${ isDisabled ? "true" : "false" } `} type="number"   id="age" className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
+              <input disabled={isDisabled } type="number"   id="age" className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
               />
             </div>
             {/* Gender And MArtial Status */}
@@ -84,7 +93,7 @@ return (
             {/* Phone Number Calling */}
             <div className="flex flex-col space-y-1">
               <label htmlFor="phone-number" className="text-sm font-semibold text-gray-500 required">Phone Number ( Calling )</label>
-              <input disabled={`${ isDisabled ? "true" : "false" } `}
+              <input disabled={isDisabled }
                 type="number"
                 id="phone-call"
                  
@@ -95,7 +104,7 @@ return (
             {/* Phone Number Whatsapp */}
             <div className="flex flex-col space-y-1">
               <label htmlFor="phone-number" className="text-sm font-semibold text-gray-500">Phone Number ( Whatsapp )</label>
-              <input disabled={`${ isDisabled ? "true" : "false" } `}
+              <input disabled={isDisabled }
                 type="number"
                 id="phone-whatsapp"
                  
@@ -105,7 +114,7 @@ return (
             {/* Email*/}
             <div className="flex flex-col space-y-1">
               <label htmlFor="email" className="text-sm font-semibold text-gray-500">Email address</label>
-              <input disabled={`${ isDisabled ? "true" : "false" } `}
+              <input disabled={isDisabled }
                 type="email"
                 id="email"
                  
@@ -117,7 +126,7 @@ return (
               <div className="flex items-center justify-between">
                 <label htmlFor="address" className="text-sm font-semibold text-gray-500 required">Address</label>
               </div>
-              <input disabled={`${ isDisabled ? "true" : "false" } `}
+              <input disabled={isDisabled }
                 type="text"
                 id="address"
                  
@@ -128,7 +137,7 @@ return (
             {/* City */}
             <div className="flex flex-col space-y-1">
               <label htmlFor="city" className="text-sm font-semibold text-gray-500 required">City</label>
-              <input disabled={`${ isDisabled ? "true" : "false" } `}
+              <input disabled={isDisabled }
                 type="text"
                 id="city"
                 required
@@ -139,7 +148,7 @@ return (
             {/* State */}
             <div className="flex flex-col space-y-1">
               <label htmlFor="state" className="text-sm font-semibold text-gray-500 required">City</label>
-              <input disabled={`${ isDisabled ? "true" : "false" } `}
+              <input disabled={isDisabled }
                 type="text"
                 id="state"
                  
@@ -150,7 +159,7 @@ return (
             {/* Country */}
             <div className="flex flex-col space-y-1">
               <label htmlFor="country" className="text-sm font-semibold text-gray-500 required">Country</label>
-              <input disabled={`${ isDisabled ? "true" : "false" } `}
+              <input disabled={isDisabled }
                 type="text"
                 id="country"
                  
@@ -167,7 +176,7 @@ return (
             {/* Name of the institute */}
             <div className="flex flex-col space-y-1">
               <label htmlFor="name" className="text-sm font-semibold text-gray-500 required">Name of the institute</label>
-              <input disabled={`${ isDisabled ? "true" : "false" } `}
+              <input disabled={isDisabled }
                 type="text"
                 id="institute-name"
                 required
@@ -180,7 +189,7 @@ return (
               <div className="flex items-center justify-between">
                 <label htmlFor="course" className="text-sm font-semibold text-gray-500 required">Course you were enrolled in</label>
               </div>
-              <input disabled={`${ isDisabled ? "true" : "false" } `}
+              <input disabled={isDisabled }
                 type="text"
                 id="course-enrolled"
                  
@@ -191,7 +200,7 @@ return (
             {/* Duration during which you studied at a institute (specify the number of years, or months.) */}
             <div className="flex flex-col space-y-1">
               <label htmlFor="course-duration" className="text-sm font-semibold text-gray-500 required">Duration during which you studied at a institute (specify the number of years, or months.)</label>
-              <input disabled={`${ isDisabled ? "true" : "false" } `}
+              <input disabled={isDisabled }
                 type="text"
                 id="course-duration"
                  
@@ -202,7 +211,7 @@ return (
             {/* Admission number (at the institute, if you don't remember, leave blank.) */}
             <div className="flex flex-col space-y-1">
               <label htmlFor="admission-number" className="text-sm font-semibold text-gray-500">Admission number (at the institute, if you don't remember, leave blank.)</label>
-              <input disabled={`${ isDisabled ? "true" : "false" } `}
+              <input disabled={isDisabled }
                 type="number"
                 id="admission-number"
                  
@@ -220,27 +229,27 @@ return (
               <label htmlFor="name" className="text-sm font-semibold text-gray-500 required">What most accurately describes your current position?</label>
               <div className="flex flex-col gap-2 ">
                 <span>
-                    <input disabled={`${ isDisabled ? "true" : "false" } `} type="radio" id="position-job" required   className="w-fit mr-2 px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-blue-200" />
+                    <input disabled={isDisabled } type="radio" id="position-job" required   className="w-fit mr-2 px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-blue-200" />
                     <label className="text-sm font-semibold text-gray-500 ">Job</label>
                 </span>
                 <span>
-                    <input disabled={`${ isDisabled ? "true" : "false" } `} type="radio" id="position-student" required   className="w-fit mr-2 px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-blue-200" />
+                    <input disabled={isDisabled } type="radio" id="position-student" required   className="w-fit mr-2 px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-blue-200" />
                     <label className="text-sm font-semibold text-gray-500 ">Student</label>
                 </span>
                 <span>
-                    <input disabled={`${ isDisabled ? "true" : "false" } `} type="radio" id="position-bussiness" required   className="w-fit mr-2 px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-blue-200" />
+                    <input disabled={isDisabled } type="radio" id="position-bussiness" required   className="w-fit mr-2 px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-blue-200" />
                     <label className="text-sm font-semibold text-gray-500 ">Businness</label>
                 </span>
                 <span>
-                    <input disabled={`${ isDisabled ? "true" : "false" } `} type="radio" id="position-unemployed" required   className="w-fit mr-2 px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-blue-200" />
+                    <input disabled={isDisabled } type="radio" id="position-unemployed" required   className="w-fit mr-2 px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-blue-200" />
                     <label className="text-sm font-semibold text-gray-500 ">Unemployed</label>
                 </span>
                 <span className='flex gap-20 align-center'>
                   <span >
-                      <input disabled={`${ isDisabled ? "true" : "false" } `} type="radio" id="position-other" required   className="w-fit mr-2 px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none  focus:ring-blue-200" />
+                      <input disabled={isDisabled } type="radio" id="position-other" required   className="w-fit mr-2 px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none  focus:ring-blue-200" />
                       <label className="text-sm font-semibold text-gray-500 ">Other</label>
                   </span>
-                  <input disabled={`${ isDisabled ? "true" : "false" } `} type="number" id="position-other-value"   required className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200" />
+                  <input disabled={isDisabled } type="number" id="position-other-value"   required className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200" />
                 </span>
               </div>
             </div>
@@ -352,7 +361,7 @@ return (
             {/* If Others, Please specify (Please specifically mention if you're working in a government organization or anything not in the list) */}
             <div className="flex flex-col space-y-1">
               <label htmlFor="phone-number" className="text-sm font-semibold text-gray-500 required">If Others, Please specify (Please specifically mention if you're working in a government organization or anything not in the list)</label>
-              <input disabled={`${ isDisabled ? "true" : "false" } `}
+              <input disabled={isDisabled }
                 type="text"
                 id="other-job-sector"
                  
@@ -399,7 +408,7 @@ return (
             {/* If Others, Please specify here*/}
             <div className="flex flex-col space-y-1">
               <label htmlFor="other-job-domain-label" className="text-sm font-semibold text-gray-500">If Others, Please specify here</label>
-              <input disabled={`${ isDisabled ? "true" : "false" } `}
+              <input disabled={isDisabled }
                 type="text"
                 name="other-job-domain-input"
                  
@@ -411,7 +420,7 @@ return (
               <div className="flex items-center justify-between">
                 <label htmlFor="designation" className="text-sm font-semibold text-gray-500 required">Designation</label>
               </div>
-              <input disabled={`${ isDisabled ? "true" : "false" } `}
+              <input disabled={isDisabled }
                 type="text"
                 id="designation"
                  
@@ -424,7 +433,7 @@ return (
               <div className="flex items-center justify-between">
                 <label htmlFor="department" className="text-sm font-semibold text-gray-500 required">Department</label>
               </div>
-              <input disabled={`${ isDisabled ? "true" : "false" } `}
+              <input disabled={isDisabled }
                 type="text"
                 id="department"
                  
@@ -437,7 +446,7 @@ return (
               <div className="flex items-center justify-between">
                 <label htmlFor="company" className="text-sm font-semibold text-gray-500 required">Company/Firm/Organization</label>
               </div>
-              <input disabled={`${ isDisabled ? "true" : "false" } `}
+              <input disabled={isDisabled }
                 type="text"
                 id="company"
                  
@@ -450,7 +459,7 @@ return (
               <div className="flex items-center justify-between">
                 <label htmlFor="working-city" className="text-sm font-semibold text-gray-500 required">City where you're working</label>
               </div>
-              <input disabled={`${ isDisabled ? "true" : "false" } `}
+              <input disabled={isDisabled }
                 type="text"
                 id="working-city"
                  
@@ -463,7 +472,7 @@ return (
               <div className="flex items-center justify-between">
                 <label htmlFor="working-state" className="text-sm font-semibold text-gray-500 required">State where you're working</label>
               </div>
-              <input disabled={`${ isDisabled ? "true" : "false" } `}
+              <input disabled={isDisabled }
                 type="text"
                 id="working-state"
                  
@@ -476,7 +485,7 @@ return (
               <div className="flex items-center justify-between">
                 <label htmlFor="working-country" className="text-sm font-semibold text-gray-500 required">Country where you're working</label>
               </div>
-              <input disabled={`${ isDisabled ? "true" : "false" } `}
+              <input disabled={isDisabled }
                 type="text"
                 id="working-country"
                  
@@ -489,7 +498,7 @@ return (
               <div className="flex items-center justify-between">
                 <label htmlFor="working-experience" className="text-sm font-semibold text-gray-500 required">Experience (in Years and months)</label>
               </div>
-              <input disabled={`${ isDisabled ? "true" : "false" } `}
+              <input disabled={isDisabled }
                 type="text"
                 id="working-experience"
                  
@@ -507,7 +516,7 @@ return (
             {/* Qualifications Completed (Degrees, Diplomas etc.) */}
             <div className="flex flex-col space-y-1">
               <label htmlFor="  " className="text-sm font-semibold text-gray-500 required">Qualifications Completed (Degrees, Diplomas etc.)</label>
-              <input disabled={`${ isDisabled ? "true" : "false" } `}
+              <input disabled={isDisabled }
                 type="text"
                 id="qualifications-completed"
                 required
@@ -520,7 +529,7 @@ return (
               <div className="flex items-center justify-between">
                 <label htmlFor="qualifications-completed-institute" className="text-sm font-semibold text-gray-500 required">Institute where you completed your most recent qualification from</label>
               </div>
-              <input disabled={`${ isDisabled ? "true" : "false" } `}
+              <input disabled={isDisabled }
                 type="text"
                 id="qualifications-completed-institute"
                  
@@ -537,7 +546,7 @@ return (
             {/* Which degree /diploma program are you currently enrolled in? */}
             <div className="flex flex-col space-y-1">
               <label htmlFor="ongoing-course" className="text-sm font-semibold text-gray-500 ">Which degree /diploma program are you currently enrolled in?</label>
-              <input disabled={`${ isDisabled ? "true" : "false" } `}
+              <input disabled={isDisabled }
                 type="text"
                 id="ongoing-course"
                  
@@ -549,7 +558,7 @@ return (
               <div className="flex items-center justify-between">
                 <label htmlFor="area-study" className="text-sm font-semibold text-gray-500 ">Area of Study</label>
               </div>
-              <input disabled={`${ isDisabled ? "true" : "false" } `}
+              <input disabled={isDisabled }
                 type="text"
                 id="area-study"
                  
@@ -561,7 +570,7 @@ return (
               <div className="flex items-center justify-between">
                 <label htmlFor="currently-enrolled-institute" className="text-sm font-semibold text-gray-500 ">Institution/University currently enrolled at.</label>
               </div>
-              <input disabled={`${ isDisabled ? "true" : "false" } `}
+              <input disabled={isDisabled }
                 type="text"
                 id="currently-enrolled-institute"
                  
@@ -578,7 +587,7 @@ return (
               <div className="flex items-center justify-between">
                 <label htmlFor="skills" className="text-sm font-semibold text-gray-500 required">Your skills, areas of expertise (that you could aid in.)</label>
               </div>
-              <input disabled={`${ isDisabled ? "true" : "false" } `}
+              <input disabled={isDisabled }
                 type="text"
                 id="skills"
                  
@@ -591,11 +600,11 @@ return (
               <label htmlFor="name" className="text-sm font-semibold text-gray-500 required">Are you already a member of any pakki sammitti/sewa group?</label>
               <div className="flex flex-col gap-2 ">
                 <span>
-                    <input disabled={`${ isDisabled ? "true" : "false" } `} type="radio" name="sewa-member-yes" required   className="w-fit mr-2 px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-blue-200" />
+                    <input disabled={isDisabled } type="radio" name="sewa-member-yes" required   className="w-fit mr-2 px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-blue-200" />
                     <label className="text-sm font-semibold text-gray-500 ">Yes</label>
                 </span>
                 <span>
-                    <input disabled={`${ isDisabled ? "true" : "false" } `} type="radio" name="sewa-member-no" required   className="w-fit mr-2 px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-blue-200" />
+                    <input disabled={isDisabled } type="radio" name="sewa-member-no" required   className="w-fit mr-2 px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-blue-200" />
                     <label className="text-sm font-semibold text-gray-500 ">No</label>
                 </span>
               </div>
@@ -603,7 +612,7 @@ return (
             {/* Any other information you want to share! (For eg. Achievements, Research experience, Sports or other awards) */}
             <div className="flex flex-col space-y-1">
               <label htmlFor="another-info" className="text-sm font-semibold text-gray-500 required">Any other information you want to share! (For eg. Achievements, Research experience, Sports or other awards)</label>
-              <input disabled={`${ isDisabled ? "true" : "false" } `}
+              <input disabled={isDisabled }
                 type="text"
                 id="another-info"
                  
@@ -615,7 +624,7 @@ return (
             <div className="flex flex-col space-y-1">
               <label htmlFor="resume-link-label" className="text-sm font-semibold text-gray-500">Link to your CV/Resume/Portfolio etc. (only if you wish to. You can upload on Google Drive and share the link!)
 </label>
-              <input disabled={`${ isDisabled ? "true" : "false" } `}
+              <input disabled={isDisabled }
                 type="text"
                 name="resume-link-input"
                  
@@ -627,12 +636,14 @@ return (
               <div className="flex items-center justify-between">
                 <label htmlFor="suggestion" className="text-sm font-semibold text-gray-500 required">Suggestions for Dera/Sewa (that could be implemented)</label>
               </div>
-              <input disabled={`${ isDisabled ? "true" : "false" } `} type="text" id="suggestion" required className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"/>
+              <input disabled={isDisabled } type="text" id="suggestion" required className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"/>
             </div>
             <span className=''>
             <div className='flex justify-center'>
               <button type="submit" className="flex w-max px-6 py-2 text-lg font-semibold text-white transition-colors duration-300 bg-blue-500 rounded-md shadow hover:bg-blue-600 focus:outline-none focus:ring-blue-200 focus:ring-4">
-              <img className='self-center mr-2' src="./Asset/Icon/save.svg" height={23} width={23} alt="" />Save
+              <div className='flex my-auto self-center mr-2 ' >
+              <MaterialIcon icon="save" size={25} />
+              </div>Save
               </button>
             </div>
             </span>

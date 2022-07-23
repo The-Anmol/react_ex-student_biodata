@@ -1,5 +1,5 @@
-
 import React, { useState }  from 'react'
+import MaterialIcon from 'react-google-material-icons'
 import './Admin.css';
 
 const Admin = () => {
@@ -14,12 +14,19 @@ const Admin = () => {
 <>
   <div className="flex items-center min-h-screen p-8 bg-gray-100 lg:justify-center">
     <div className="min-w-11/12 min-h-11/12 flex flex-col flex-1 overflow-hidden bg-white rounded-md shadow-lg max md:flex-1 2xl:max-w-screen-xl 2xl:max-h-screen-sm">
-      <div className="p-5 bg-white md:flex-1">
-        <h3 className="my-4 text-2xl font-semibold text-gray-700">Admin Dashboard</h3>
-        <div className='flex flex-col bg-gray-100 justify-evenly sm:flex-row'>
+      <div className=" p-5 bg-white md:flex-1">
+        <div className='flex justify-between items-center'>
+            <h3 className="my-4 text-2xl font-semibold text-gray-700">Admin Dashboard</h3>
+            <div className='px-4'>
+                <input className='px-4 py-2 transition duration-300 border bg-gray-200 border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"' type="text" />
+            </div> 
+        </div>
+        <div className='flex flex-col bg-gray-200 justify-evenly sm:flex-row'>
             <div className=' p-4 '>
-                <span className='flex text-center'>
-                    <img className='bg-white p-4 rounded-3xl' src="./Asset/Icon/group.svg" alt="" />
+                <span className='flex bg-white p-4 rounded-3xl text-center'>
+                    <div className='flex my-auto'> 
+                        <MaterialIcon icon="group" size={80} />
+                     </div>
                     <div className='p-4 flex flex-col text-left justify-center'>
                       <div className='text-lg no-student'>32</div>
                       <div className='text-gray-600 '>Students</div>
@@ -27,10 +34,10 @@ const Admin = () => {
                 </span>
             </div>
          </div>
-        <div className='flex flex-col bg-gray-100 my-4 justify-evenly sm:flex-row'>
+        <div className='flex flex-col bg-gray-200 my-4 justify-evenly sm:flex-row'>
           <div className='w-full p-4 '>
-            <button onClick={handleClick} className='mb-2 flex gap-2 text-md bg-white p-2'> 
-                <img  src="./Asset/Icon/filter.svg" height={25} width={25} alt="" />Filter
+            <button onClick={handleClick} className='mb-2 my-auto flex gap-2 text-md bg-white p-2'> 
+                        <MaterialIcon icon="tune" size={25} />Filter
              </button>
              
             <div  className={`flex flex-col ${ filterToggled ? "show" : "hide" } `} >
@@ -236,7 +243,7 @@ const Admin = () => {
             <div className='flex flex-col'>
               <ul className='filtered-list flex justify-between py-1 ' >
                 <li>Full Name</li>
-                <li className='hidden sm:block'>School/College/Institute</li>
+                <li className='hidden md:block'>School/College/Institute</li>
                 <li>Qualification</li>
                 <li className='hidden md:block'>Phone NO. ( Calling )</li>
                 <div className='flex gap-8 mr-0'>
