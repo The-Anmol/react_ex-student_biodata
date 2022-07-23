@@ -37,31 +37,32 @@ const Admin = () => {
           <div className='w-full p-4 flex flex-col'>
             <div className='flex flex-col gap-2 mb-2 xl:justify-between xl:flex-row '>
                 <button onClick={handleClick} className='h-max w-max px-4 py-2  my-auto flex gap-2 text-md bg-white p-2'> 
-                    <MaterialIcon icon="tune" size={25} />Filter
+                    {/* <MaterialIcon icon="tune" size={25} /> */}
+                    Filter
                 </button>
                 <div className='flex flex-col gap-2 xl:justify-between xl:flex-row '>
                     <div className='flex flex-row w-full '>
                         <input placeholder='Search for Name ' className='px-4 py-2 transition duration-300 border font-semibold text-gray-700 bg-white border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"' type="text" />
                         <span className='-ml-8 flex items-center'>
-                        <MaterialIcon icon="search" size={25} />
+                        {/* <MaterialIcon icon="search" size={25} /> */}
                         </span>
                     </div> 
                     <div className='flex flex-row'>
                         <input placeholder='Search for Institute' className='px-4 py-2 transition duration-300 border font-semibold text-gray-700 bg-white border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"' type="text" />
                         <span className='-ml-8 flex items-center'>
-                        <MaterialIcon icon="search" size={25} />
+                        {/* <MaterialIcon icon="search" size={25} /> */}
                         </span>
                     </div> 
                     <div className='flex flex-row'>
                         <input placeholder='Search' className='px-4 py-2 transition duration-300 border bg-white font-semibold text-gray-700  border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"' type="text" />
                         <span className='-ml-8 flex items-center'>
-                        <MaterialIcon icon="search" size={25} />
+                        {/* <MaterialIcon icon="search" size={25} /> */}
                         </span>
                     </div> 
                     <div className='flex flex-row w-full'>
                         <input placeholder='Search' className='px-4 py-2 transition duration-300 border text-gray-700 font-semibold bg-white border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"' type="text" />
                         <span className='-ml-8 flex items-center'>
-                        <MaterialIcon icon="search" size={25} />
+                        {/* <MaterialIcon icon="search" size={25} /> */}
                         </span>
                     </div> 
                 </div>

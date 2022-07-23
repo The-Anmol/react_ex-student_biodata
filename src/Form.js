@@ -617,7 +617,7 @@ const Form = () => {
             <div className='flex justify-center'>
               <button type="submit" className="flex w-max px-6 py-2 text-lg font-semibold text-white transition-colors duration-300 bg-blue-500 rounded-md shadow hover:bg-blue-600 focus:outline-none focus:ring-blue-200 focus:ring-4">
               <div className='flex self-center mr-2 my-auto' >
-              <MaterialIcon icon="save" size={25} />
+              {/* <MaterialIcon icon="save" size={25} /> */}
               </div>Save
               </button>
             </div>
