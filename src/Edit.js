@@ -9,17 +9,8 @@ const Edit = () => {
 
   let [ isDisabled , setIsDisabled ] = useState(true);
 
-  
-  {/* <MaterialIcon icon="account_box" size={36}/> */}
-    
-  
   function enableInput(){
     setIsDisabled(!isDisabled);
-    console.log(isDisabled);
-    console.log("Edit Clicked");
-
-
-
   }
 
 return (
