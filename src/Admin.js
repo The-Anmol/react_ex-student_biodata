@@ -8,15 +8,16 @@ const Admin = () => {
   function handleClick(){
     setFilterToggled(!filterToggled);
     console.log(filterToggled);
+    console.log("clicked");
   }
 
   return(
-    <>
-    <div className="flex items-center min-h-screen p-8 bg-gray-100 lg:justify-center">
-      <div className="min-w-11/12 min-h-11/12 flex flex-col flex-1 overflow-hidden bg-white rounded-md shadow-lg max md:flex-1 2xl:max-w-screen-xl 2xl:max-h-screen-sm">
-        <div className="p-5 bg-white md:flex-1">
-          <h3 className="my-4 text-2xl font-semibold text-gray-700">Admin Dashboard</h3>
-          <div className='flex flex-col bg-gray-100 justify-evenly sm:flex-row'>
+<>
+  <div className="flex items-center min-h-screen p-8 bg-gray-100 lg:justify-center">
+    <div className="min-w-11/12 min-h-11/12 flex flex-col flex-1 overflow-hidden bg-white rounded-md shadow-lg max md:flex-1 2xl:max-w-screen-xl 2xl:max-h-screen-sm">
+      <div className="p-5 bg-white md:flex-1">
+        <h3 className="my-4 text-2xl font-semibold text-gray-700">Admin Dashboard</h3>
+        <div className='flex flex-col bg-gray-100 justify-evenly sm:flex-row'>
             <div className=' p-4 '>
                 <span className='flex text-center'>
                     <img className='bg-white p-4 rounded-3xl' src="./Asset/Icon/group.svg" alt="" />
@@ -26,13 +27,13 @@ const Admin = () => {
                     </div>
                 </span>
             </div>
-          </div>
-          <div className='flex flex-col bg-gray-100 my-4 justify-evenly sm:flex-row'>
-            <div className='w-full p-4 '>
-              <button onClick={handleClick} className='mb-2 flex gap-2 text-md bg-white p-2'> 
+         </div>
+        <div className='flex flex-col bg-gray-100 my-4 justify-evenly sm:flex-row'>
+          <div className='w-full p-4 '>
+            <button onClick={handleClick} className='mb-2 flex gap-2 text-md bg-white p-2'> 
                 <img  src="./Asset/Icon/filter.svg" height={25} width={25} alt="" />Filter
-               </button>
-                <div className={`flex flex-row 0-1200:flex-col ${ filterToggled ? "show" : "hide" } `}>
+             </button>
+            <div className={`filters-grid flex flex-row 0-1200:flex-col ${ filterToggled ? "show" : "hide" } `} >
                         <div className='w-full text-center mb-4 flex-1'>
                             <div className='text-lg' >Educational Institutions</div>
                             <div className=" flex items-center space-x-2 py-2">
@@ -231,7 +232,7 @@ const Admin = () => {
                                 <label className="text-sm font-semibold text-gray-500">Other</label>
                             </div>                      
                         </div>
-                </div>
+             </div>
             <div className='flex flex-col'>
               <ul className='filtered-list flex justify-between py-1 ' >
                 <li>Full Name</li>
@@ -250,12 +251,12 @@ const Admin = () => {
                 </div>
               </ul>
             </div>
-            </div>
           </div>
         </div>
       </div>
     </div>
-    </>
+  </div>
+</>
   )
 }
 export default Admin;
