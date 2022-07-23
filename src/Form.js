@@ -1,6 +1,6 @@
 import React from 'react';
 
-import MaterialIcon from 'react-google-material-icons'
+// import MaterialIcon from 'react-google-material-icons'
 import "./Form.css";
 
 const Form = () => {
