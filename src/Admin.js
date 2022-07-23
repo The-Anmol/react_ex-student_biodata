@@ -23,7 +23,8 @@ const Admin = () => {
             <div className='justify-between p-4 '>
                 <span className='flex bg-white p-4 rounded-3xl text-center'>
                     <div className='flex my-auto'> 
-                        <MaterialIcon icon="group" size={80} />
+                        {/* <MaterialIcon icon="group" size={80} /> */}
+                        <img src="./Asset/Icon/group.svg" width={25} alt="" />
                      </div>
                     <div className='p-4 flex flex-col text-left justify-center'>
                       <div className='text-lg no-student font-semibold'>32</div>
