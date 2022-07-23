@@ -1,5 +1,7 @@
 import React, { useState  } from 'react'
-// import MaterialIcon from 'react-google-material-icons'
+import { MdModeEdit } from "react-icons/md";
+import { MdSave } from "react-icons/md";
+import { MdDone } from "react-icons/md";
 
 
 import "./Form.css";
@@ -8,9 +10,15 @@ import "./Form.css";
 const Edit = () => {
 
   let [ isDisabled , setIsDisabled ] = useState(true);
+  let [ visibilityForDone , setVisibilityForDone ] = useState(true);
+  let [ visibilityForEdit , setVisibilityForEdit ] = useState(true);
+  let [ visibilityForSave , setVisibilityForSave ] = useState(false);
 
   function enableInput(){
     setIsDisabled(!isDisabled);
+    setVisibilityForDone(!visibilityForDone);
+    setVisibilityForEdit(!visibilityForEdit);
+    setVisibilityForSave(!visibilityForSave);
   }
 
 return (
@@ -20,9 +28,10 @@ return (
         {/* Ex-student Biodata Collection */}
         <div className="p-5 bg-white md:flex-1">
               <h1 className=" flex justify-between my-4 text-2xl font-semibold text-gray-700">Ex-student Biodata Collection 
-                  <button type="submit" onClick={enableInput} className="w-fit flex justify-between px-4 py-2 m-0 text-lg font-semibold text-white transition-colors duration-300 bg-gray-700 rounded-md shadow hover:bg-slate-800 focus:outline-none focus:ring-blue-200 focus:ring-4">
+                  <button type="submit" onClick={enableInput} className={`w-fit flex justify-between px-4 py-2 m-0 text-lg font-semibold text-white transition-colors duration-300 bg-gray-700 rounded-md shadow hover:bg-slate-800 focus:outline-none focus:ring-blue-200 focus:ring-4 ${ visibilityForEdit ? "show" : "hide" }`}>
                   <div className="flex self-center  mr-2 my-auto">
                     {/* <MaterialIcon icon="edit" size={20} /> */}
+                    < MdModeEdit size={23}/>
                   </div>Edit
                   </button>
               </h1>
@@ -629,15 +638,24 @@ return (
               </div>
               <input disabled={isDisabled } type="text" id="suggestion" required className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"/>
             </div>
-            <span className=''>
-            <div className='flex justify-center'>
-              <button type="submit" className="flex w-max px-6 py-2 text-lg font-semibold text-white transition-colors duration-300 bg-blue-500 rounded-md shadow hover:bg-blue-600 focus:outline-none focus:ring-blue-200 focus:ring-4">
-              <div className='flex my-auto self-center mr-2 ' >
-              {/* <MaterialIcon icon="save" size={25} /> */}
-              </div>Save
-              </button>
+            <div className='flex justify-center items-center'>
+              <div className={`flex justify-center  ${ visibilityForSave ? "show" : "hide" }`} >
+                <button type="submit" className="flex w-max px-6 py-2 text-lg font-semibold text-white transition-colors duration-300 bg-blue-500 rounded-md shadow hover:bg-blue-600 focus:outline-none focus:ring-blue-200 focus:ring-4">
+                <div className='flex my-auto self-center mr-2 ' >
+                {/* <MaterialIcon icon="save" size={25} /> */}
+                < MdSave size={23}/>
+                </div>Save
+                </button>
+              </div>
+              <div className={`flex justify-center ${ visibilityForDone ? "show" : "hide" }`} >
+                <button type="submit" className="flex w-max px-6 py-2 text-lg font-semibold text-white transition-colors duration-300 bg-blue-500 rounded-md shadow hover:bg-blue-600 focus:outline-none focus:ring-blue-200 focus:ring-4">
+                <div className='flex my-auto self-center mr-2 ' >
+                {/* <MaterialIcon icon="save" size={25} /> */}
+                < MdDone size={23}/>
+                </div>Done
+                </button>
+              </div>
             </div>
-            </span>
           </form>
         </div>
           </form>

@@ -1,5 +1,7 @@
 import React, { useState }  from 'react'
-// import MaterialIcon from 'react-google-material-icons'
+import { MdSearch } from "react-icons/md";
+import { MdTune } from "react-icons/md";
+import { MdGroup } from "react-icons/md";
 import './Admin.css';
 
 const Admin = () => {
@@ -16,15 +18,14 @@ const Admin = () => {
     <div className="min-w-11/12 min-h-11/12 flex flex-col flex-1 overflow-hidden bg-white rounded-md shadow-lg max md:flex-1 2xl:max-w-screen-xl 2xl:max-h-screen-sm">
       <div className=" p-5 bg-white md:flex-1">
         <div className='flex justify-between items-center'>
-            <h3 className="my-4 text-2xl font-semibold text-gray-700">Admin Dashboard</h3>
-            
+            <h3 className="my-4 text-2xl font-semibold text-gray-700">Admin Dashboard</h3>   
         </div>
         <div className='flex flex-col bg-gray-200 justify-evenly sm:flex-row'>
             <div className='justify-between p-4 '>
                 <span className='flex bg-white p-4 rounded-3xl text-center'>
                     <div className='flex my-auto'> 
                         {/* <MaterialIcon icon="group" size={80} /> */}
-                        <img src="./Asset/Icon/group.svg" width={25} alt="" />
+                        <MdGroup  className='flex my-auto' size={100} />
                      </div>
                     <div className='p-4 flex flex-col text-left justify-center'>
                       <div className='text-lg no-student font-semibold'>32</div>
@@ -35,34 +36,39 @@ const Admin = () => {
          </div>
         <div className='flex flex-col bg-gray-200 my-4 justify-evenly sm:flex-row'>
           <div className='w-full p-4 flex flex-col'>
-            <div className='flex flex-col gap-2 mb-2 xl:justify-between xl:flex-row '>
-                <button onClick={handleClick} className='h-max w-max px-4 py-2  my-auto flex gap-2 text-md bg-white p-2'> 
+            <div className='flex flex-col gap-2 mb-2 xl:justify-evenly xl:flex-row '>
+                <button onClick={handleClick} className='h-max w-max px-4 py-2 text-center my-auto flex gap-2 text-md bg-white p-2'> 
                     {/* <MaterialIcon icon="tune" size={25} /> */}
+                    <MdTune className='flex my-auto' size={23} />
                     Filter
                 </button>
-                <div className='flex flex-col gap-2 xl:justify-between xl:flex-row '>
-                    <div className='flex flex-row w-full '>
+                <div className='flex flex-col gap-4 xl:justify-between xl:flex-row '>
+                    <div className='flex flex-row'>
                         <input placeholder='Search for Name ' className='px-4 py-2 transition duration-300 border font-semibold text-gray-700 bg-white border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"' type="text" />
                         <span className='-ml-8 flex items-center'>
                         {/* <MaterialIcon icon="search" size={25} /> */}
+                        <MdSearch className='flex my-auto' size={23} />
                         </span>
                     </div> 
                     <div className='flex flex-row'>
                         <input placeholder='Search for Institute' className='px-4 py-2 transition duration-300 border font-semibold text-gray-700 bg-white border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"' type="text" />
                         <span className='-ml-8 flex items-center'>
                         {/* <MaterialIcon icon="search" size={25} /> */}
+                        <MdSearch className='flex my-auto' size={23} />
                         </span>
                     </div> 
                     <div className='flex flex-row'>
                         <input placeholder='Search' className='px-4 py-2 transition duration-300 border bg-white font-semibold text-gray-700  border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"' type="text" />
                         <span className='-ml-8 flex items-center'>
                         {/* <MaterialIcon icon="search" size={25} /> */}
+                        <MdSearch className='flex my-auto' size={23} />
                         </span>
                     </div> 
-                    <div className='flex flex-row w-full'>
+                    <div className='flex flex-row '>
                         <input placeholder='Search' className='px-4 py-2 transition duration-300 border text-gray-700 font-semibold bg-white border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"' type="text" />
                         <span className='-ml-8 flex items-center'>
                         {/* <MaterialIcon icon="search" size={25} /> */}
+                        <MdSearch className='flex my-auto' size={23} />
                         </span>
                     </div> 
                 </div>
