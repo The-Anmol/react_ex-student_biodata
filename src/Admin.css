@@ -1,13 +1,13 @@
 ol{
     counter-reset:list;
 }   
-ul{
+.filtered-list{
     counter-increment: list;
     cursor: pointer;
     user-select: none;
 
 }
-ul:before{
+.filtered-list:before{
     content: counter(list) ;
     margin-left: 0;
     position: relative;
@@ -15,4 +15,10 @@ ul:before{
 }
 button{
     user-select: none;
+}
+@media (min-device-width:1200px){
+    .filter-grid{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
 }
