@@ -16,6 +16,12 @@ ol{
 button{
     user-select: none;
 }
+.show{
+    display: flex;
+}
+.hide{
+    display: none;
+}
 @media (min-device-width:1200px){
     .filter-grid{
         display: grid;

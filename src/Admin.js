@@ -6,7 +6,7 @@ const Admin = () => {
   const [ filterToggled , setFilterToggled ] = useState(false);
 
   function handleClick(){
-    filterToggled ? setFilterToggled(false) : setFilterToggled(true) ;
+    setFilterToggled(!filterToggled);
     console.log(filterToggled);
   }
 
@@ -32,207 +32,206 @@ const Admin = () => {
               <button onClick={handleClick} className='mb-2 flex gap-2 text-md bg-white p-2'> 
                 <img  src="./Asset/Icon/filter.svg" height={25} width={25} alt="" />Filter
                </button>
-               {/* lg:grid-cols-2 */}
-               <div className={` filter-grid flex flex-row 0-1200:flex-col  ${filterToggled ? "show" : "hide"}`}>
-                      <div className='w-full text-center mb-4 flex-1'>
-                          <div className='text-lg' >Educational Institutions</div>
-                          <div className=" flex items-center space-x-2 py-2">
-                              <input type="checkbox" className="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200" />
-                              <label className="text-sm font-semibold text-gray-500">Shah Satnam Ji Girls School – Sirsa ( Haryana )</label>
-                          </div>
-                          <div className="flex items-center space-x-2 py-2">
-                              <input type="checkbox" className="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200" />
-                              <label className="text-sm font-semibold text-gray-500">Shah Satnam Ji Girls College – Sirsa ( Haryana )</label>
-                          </div>
-                          <div className="flex items-center space-x-2 py-2">
-                              <input type="checkbox" className="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200" />
-                              <label className="text-sm font-semibold text-gray-500">Shah Satnam Ji Boys School – Sirsa ( Haryana )</label>
-                          </div>
-                          <div className="flex items-center space-x-2 py-2">
-                              <input type="checkbox" className="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200" />
-                              <label className="text-sm font-semibold text-gray-500">Shah Satnam Ji Boys College – Sirsa ( Haryana )</label>
-                          </div>                 
-                          <div className="flex items-center space-x-2 py-2">
-                              <input type="checkbox" className="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200" />
-                              <label className="text-sm font-semibold text-gray-500">Shah Satnam Ji College of Education – Sirsa ( Haryana )</label>
-                          </div>
-                          <div className="flex items-center space-x-2 py-2">
-                              <input type="checkbox" className="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200" />
-                              <label className="text-sm font-semibold text-gray-500">Saint MSG Glorious International School – Sirsa ( Haryana )</label>
-                          </div>
-                          <div className="flex items-center space-x-2 py-2">
-                              <input type="checkbox" className="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200" />
-                              <label className="text-sm font-semibold text-gray-500">Shah Satnam Ji Noble School – Kotda, Udaipur ( Rajasthan )</label>
-                          </div>                  
-                          <div className="flex items-center space-x-2 py-2">
-                              <input type="checkbox" className="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200" />
-                              <label className="text-sm font-semibold text-gray-500">Shah Satnam Ji Girls School – Tara Nagar, Churu ( Rajasthan )</label>
-                          </div>
-                          <div className="flex items-center space-x-2 py-2">
-                              <input type="checkbox" className="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200" />
-                              <label className="text-sm font-semibold text-gray-500">Shah Satnam Ji Girls School – Budhni, Sehore ( Madhya Pradesh )</label>
-                          </div> 
-                          <div className="flex items-center space-x-2 py-2">
-                              <input type="checkbox" className="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200" />
-                              <label className="text-sm font-semibold text-gray-500">Shah Satnam Ji Girls School – Sri Gurusar Modia, Sri Ganganagar ( Rajasthan )</label>
-                          </div>
-                          <div className="flex items-center space-x-2 py-2">
-                              <input type="checkbox" className="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200" />
-                              <label className="text-sm font-semibold text-gray-500">Shah Satnam Ji Girls College – Sri Gurusar Modia, Sri Ganganagar ( Rajasthan )</label>
-                          </div>
-                          <div className="flex items-center space-x-2 py-2">
-                              <input type="checkbox" className="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200" />
-                              <label className="text-sm font-semibold text-gray-500">Shah Satnam Ji Boys School – Sri Gurusar Modia, Sri Ganganagar ( Rajasthan )</label>
-                          </div>
-                      </div>
-                      <div className='w-full text-center mb-4 flex-1'>
-                          <div className='text-lg' >Gender</div>
-                          <div className=" flex items-center space-x-2 py-2">
-                              <input type="checkbox" className="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200" />
-                              <label className="text-sm font-semibold text-gray-500">Male</label>
-                          </div>
-                          <div className="flex items-center space-x-2 py-2">
-                              <input type="checkbox" className="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200" />
-                              <label className="text-sm font-semibold text-gray-500">Female</label>
-                          </div>                      
-                          <div className="flex items-center space-x-2 py-2">
-                              <input type="checkbox" className="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200" />
-                              <label className="text-sm font-semibold text-gray-500">Other</label>
-                          </div>                      
-                      </div>
-                      <div className='w-full text-center mb-4 flex-1'>
-                          <div className='text-lg' >Educational Institutions</div>
-                          <div className=" flex items-center space-x-2 py-2">
-                              <input type="checkbox" className="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200" />
-                              <label className="text-sm font-semibold text-gray-500">Shah Satnam Ji Girls School – Sirsa ( Haryana )</label>
-                          </div>
-                          <div className="flex items-center space-x-2 py-2">
-                              <input type="checkbox" className="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200" />
-                              <label className="text-sm font-semibold text-gray-500">Shah Satnam Ji Girls College – Sirsa ( Haryana )</label>
-                          </div>
-                          <div className="flex items-center space-x-2 py-2">
-                              <input type="checkbox" className="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200" />
-                              <label className="text-sm font-semibold text-gray-500">Shah Satnam Ji Boys School – Sirsa ( Haryana )</label>
-                          </div>
-                          <div className="flex items-center space-x-2 py-2">
-                              <input type="checkbox" className="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200" />
-                              <label className="text-sm font-semibold text-gray-500">Shah Satnam Ji Boys College – Sirsa ( Haryana )</label>
-                          </div>                 
-                          <div className="flex items-center space-x-2 py-2">
-                              <input type="checkbox" className="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200" />
-                              <label className="text-sm font-semibold text-gray-500">Shah Satnam Ji College of Education – Sirsa ( Haryana )</label>
-                          </div>
-                          <div className="flex items-center space-x-2 py-2">
-                              <input type="checkbox" className="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200" />
-                              <label className="text-sm font-semibold text-gray-500">Saint MSG Glorious International School – Sirsa ( Haryana )</label>
-                          </div>
-                          <div className="flex items-center space-x-2 py-2">
-                              <input type="checkbox" className="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200" />
-                              <label className="text-sm font-semibold text-gray-500">Shah Satnam Ji Noble School – Kotda, Udaipur ( Rajasthan )</label>
-                          </div>                  
-                          <div className="flex items-center space-x-2 py-2">
-                              <input type="checkbox" className="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200" />
-                              <label className="text-sm font-semibold text-gray-500">Shah Satnam Ji Girls School – Tara Nagar, Churu ( Rajasthan )</label>
-                          </div>
-                          <div className="flex items-center space-x-2 py-2">
-                              <input type="checkbox" className="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200" />
-                              <label className="text-sm font-semibold text-gray-500">Shah Satnam Ji Girls School – Budhni, Sehore ( Madhya Pradesh )</label>
-                          </div> 
-                          <div className="flex items-center space-x-2 py-2">
-                              <input type="checkbox" className="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200" />
-                              <label className="text-sm font-semibold text-gray-500">Shah Satnam Ji Girls School – Sri Gurusar Modia, Sri Ganganagar ( Rajasthan )</label>
-                          </div>
-                          <div className="flex items-center space-x-2 py-2">
-                              <input type="checkbox" className="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200" />
-                              <label className="text-sm font-semibold text-gray-500">Shah Satnam Ji Girls College – Sri Gurusar Modia, Sri Ganganagar ( Rajasthan )</label>
-                          </div>
-                          <div className="flex items-center space-x-2 py-2">
-                              <input type="checkbox" className="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200" />
-                              <label className="text-sm font-semibold text-gray-500">Shah Satnam Ji Boys School – Sri Gurusar Modia, Sri Ganganagar ( Rajasthan )</label>
-                          </div>
-                      </div>
-                      <div className='w-full text-center mb-4 flex-1'>
-                          <div className='text-lg' >Gender</div>
-                          <div className=" flex items-center space-x-2 py-2">
-                              <input type="checkbox" className="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200" />
-                              <label className="text-sm font-semibold text-gray-500">Male</label>
-                          </div>
-                          <div className="flex items-center space-x-2 py-2">
-                              <input type="checkbox" className="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200" />
-                              <label className="text-sm font-semibold text-gray-500">Female</label>
-                          </div>                      
-                          <div className="flex items-center space-x-2 py-2">
-                              <input type="checkbox" className="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200" />
-                              <label className="text-sm font-semibold text-gray-500">Other</label>
-                          </div>                      
-                      </div>
-                      <div className='w-full text-center mb-4 flex-1'>
-                          <div className='text-lg' >Educational Institutions</div>
-                          <div className=" flex items-center space-x-2 py-2">
-                              <input type="checkbox" className="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200" />
-                              <label className="text-sm font-semibold text-gray-500">Shah Satnam Ji Girls School – Sirsa ( Haryana )</label>
-                          </div>
-                          <div className="flex items-center space-x-2 py-2">
-                              <input type="checkbox" className="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200" />
-                              <label className="text-sm font-semibold text-gray-500">Shah Satnam Ji Girls College – Sirsa ( Haryana )</label>
-                          </div>
-                          <div className="flex items-center space-x-2 py-2">
-                              <input type="checkbox" className="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200" />
-                              <label className="text-sm font-semibold text-gray-500">Shah Satnam Ji Boys School – Sirsa ( Haryana )</label>
-                          </div>
-                          <div className="flex items-center space-x-2 py-2">
-                              <input type="checkbox" className="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200" />
-                              <label className="text-sm font-semibold text-gray-500">Shah Satnam Ji Boys College – Sirsa ( Haryana )</label>
-                          </div>                 
-                          <div className="flex items-center space-x-2 py-2">
-                              <input type="checkbox" className="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200" />
-                              <label className="text-sm font-semibold text-gray-500">Shah Satnam Ji College of Education – Sirsa ( Haryana )</label>
-                          </div>
-                          <div className="flex items-center space-x-2 py-2">
-                              <input type="checkbox" className="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200" />
-                              <label className="text-sm font-semibold text-gray-500">Saint MSG Glorious International School – Sirsa ( Haryana )</label>
-                          </div>
-                          <div className="flex items-center space-x-2 py-2">
-                              <input type="checkbox" className="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200" />
-                              <label className="text-sm font-semibold text-gray-500">Shah Satnam Ji Noble School – Kotda, Udaipur ( Rajasthan )</label>
-                          </div>                  
-                          <div className="flex items-center space-x-2 py-2">
-                              <input type="checkbox" className="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200" />
-                              <label className="text-sm font-semibold text-gray-500">Shah Satnam Ji Girls School – Tara Nagar, Churu ( Rajasthan )</label>
-                          </div>
-                          <div className="flex items-center space-x-2 py-2">
-                              <input type="checkbox" className="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200" />
-                              <label className="text-sm font-semibold text-gray-500">Shah Satnam Ji Girls School – Budhni, Sehore ( Madhya Pradesh )</label>
-                          </div> 
-                          <div className="flex items-center space-x-2 py-2">
-                              <input type="checkbox" className="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200" />
-                              <label className="text-sm font-semibold text-gray-500">Shah Satnam Ji Girls School – Sri Gurusar Modia, Sri Ganganagar ( Rajasthan )</label>
-                          </div>
-                          <div className="flex items-center space-x-2 py-2">
-                              <input type="checkbox" className="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200" />
-                              <label className="text-sm font-semibold text-gray-500">Shah Satnam Ji Girls College – Sri Gurusar Modia, Sri Ganganagar ( Rajasthan )</label>
-                          </div>
-                          <div className="flex items-center space-x-2 py-2">
-                              <input type="checkbox" className="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200" />
-                              <label className="text-sm font-semibold text-gray-500">Shah Satnam Ji Boys School – Sri Gurusar Modia, Sri Ganganagar ( Rajasthan )</label>
-                          </div>
-                      </div>
-                      <div className='w-full text-center mb-4 flex-1'>
-                          <div className='text-lg' >Gender</div>
-                          <div className=" flex items-center space-x-2 py-2">
-                              <input type="checkbox" className="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200" />
-                              <label className="text-sm font-semibold text-gray-500">Male</label>
-                          </div>
-                          <div className="flex items-center space-x-2 py-2">
-                              <input type="checkbox" className="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200" />
-                              <label className="text-sm font-semibold text-gray-500">Female</label>
-                          </div>                      
-                          <div className="flex items-center space-x-2 py-2">
-                              <input type="checkbox" className="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200" />
-                              <label className="text-sm font-semibold text-gray-500">Other</label>
-                          </div>                      
-                      </div>
-               </div>
+                <div className={`flex flex-row 0-1200:flex-col ${ filterToggled ? "show" : "hide" } `}>
+                        <div className='w-full text-center mb-4 flex-1'>
+                            <div className='text-lg' >Educational Institutions</div>
+                            <div className=" flex items-center space-x-2 py-2">
+                                <input type="checkbox" className="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200" />
+                                <label className="text-sm font-semibold text-gray-500">Shah Satnam Ji Girls School – Sirsa ( Haryana )</label>
+                            </div>
+                            <div className="flex items-center space-x-2 py-2">
+                                <input type="checkbox" className="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200" />
+                                <label className="text-sm font-semibold text-gray-500">Shah Satnam Ji Girls College – Sirsa ( Haryana )</label>
+                            </div>
+                            <div className="flex items-center space-x-2 py-2">
+                                <input type="checkbox" className="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200" />
+                                <label className="text-sm font-semibold text-gray-500">Shah Satnam Ji Boys School – Sirsa ( Haryana )</label>
+                            </div>
+                            <div className="flex items-center space-x-2 py-2">
+                                <input type="checkbox" className="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200" />
+                                <label className="text-sm font-semibold text-gray-500">Shah Satnam Ji Boys College – Sirsa ( Haryana )</label>
+                            </div>                 
+                            <div className="flex items-center space-x-2 py-2">
+                                <input type="checkbox" className="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200" />
+                                <label className="text-sm font-semibold text-gray-500">Shah Satnam Ji College of Education – Sirsa ( Haryana )</label>
+                            </div>
+                            <div className="flex items-center space-x-2 py-2">
+                                <input type="checkbox" className="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200" />
+                                <label className="text-sm font-semibold text-gray-500">Saint MSG Glorious International School – Sirsa ( Haryana )</label>
+                            </div>
+                            <div className="flex items-center space-x-2 py-2">
+                                <input type="checkbox" className="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200" />
+                                <label className="text-sm font-semibold text-gray-500">Shah Satnam Ji Noble School – Kotda, Udaipur ( Rajasthan )</label>
+                            </div>                  
+                            <div className="flex items-center space-x-2 py-2">
+                                <input type="checkbox" className="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200" />
+                                <label className="text-sm font-semibold text-gray-500">Shah Satnam Ji Girls School – Tara Nagar, Churu ( Rajasthan )</label>
+                            </div>
+                            <div className="flex items-center space-x-2 py-2">
+                                <input type="checkbox" className="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200" />
+                                <label className="text-sm font-semibold text-gray-500">Shah Satnam Ji Girls School – Budhni, Sehore ( Madhya Pradesh )</label>
+                            </div> 
+                            <div className="flex items-center space-x-2 py-2">
+                                <input type="checkbox" className="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200" />
+                                <label className="text-sm font-semibold text-gray-500">Shah Satnam Ji Girls School – Sri Gurusar Modia, Sri Ganganagar ( Rajasthan )</label>
+                            </div>
+                            <div className="flex items-center space-x-2 py-2">
+                                <input type="checkbox" className="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200" />
+                                <label className="text-sm font-semibold text-gray-500">Shah Satnam Ji Girls College – Sri Gurusar Modia, Sri Ganganagar ( Rajasthan )</label>
+                            </div>
+                            <div className="flex items-center space-x-2 py-2">
+                                <input type="checkbox" className="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200" />
+                                <label className="text-sm font-semibold text-gray-500">Shah Satnam Ji Boys School – Sri Gurusar Modia, Sri Ganganagar ( Rajasthan )</label>
+                            </div>
+                        </div>
+                        <div className='w-full text-center mb-4 flex-1'>
+                            <div className='text-lg' >Gender</div>
+                            <div className=" flex items-center space-x-2 py-2">
+                                <input type="checkbox" className="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200" />
+                                <label className="text-sm font-semibold text-gray-500">Male</label>
+                            </div>
+                            <div className="flex items-center space-x-2 py-2">
+                                <input type="checkbox" className="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200" />
+                                <label className="text-sm font-semibold text-gray-500">Female</label>
+                            </div>                      
+                            <div className="flex items-center space-x-2 py-2">
+                                <input type="checkbox" className="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200" />
+                                <label className="text-sm font-semibold text-gray-500">Other</label>
+                            </div>                      
+                        </div>
+                        <div className='w-full text-center mb-4 flex-1'>
+                            <div className='text-lg' >Educational Institutions</div>
+                            <div className=" flex items-center space-x-2 py-2">
+                                <input type="checkbox" className="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200" />
+                                <label className="text-sm font-semibold text-gray-500">Shah Satnam Ji Girls School – Sirsa ( Haryana )</label>
+                            </div>
+                            <div className="flex items-center space-x-2 py-2">
+                                <input type="checkbox" className="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200" />
+                                <label className="text-sm font-semibold text-gray-500">Shah Satnam Ji Girls College – Sirsa ( Haryana )</label>
+                            </div>
+                            <div className="flex items-center space-x-2 py-2">
+                                <input type="checkbox" className="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200" />
+                                <label className="text-sm font-semibold text-gray-500">Shah Satnam Ji Boys School – Sirsa ( Haryana )</label>
+                            </div>
+                            <div className="flex items-center space-x-2 py-2">
+                                <input type="checkbox" className="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200" />
+                                <label className="text-sm font-semibold text-gray-500">Shah Satnam Ji Boys College – Sirsa ( Haryana )</label>
+                            </div>                 
+                            <div className="flex items-center space-x-2 py-2">
+                                <input type="checkbox" className="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200" />
+                                <label className="text-sm font-semibold text-gray-500">Shah Satnam Ji College of Education – Sirsa ( Haryana )</label>
+                            </div>
+                            <div className="flex items-center space-x-2 py-2">
+                                <input type="checkbox" className="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200" />
+                                <label className="text-sm font-semibold text-gray-500">Saint MSG Glorious International School – Sirsa ( Haryana )</label>
+                            </div>
+                            <div className="flex items-center space-x-2 py-2">
+                                <input type="checkbox" className="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200" />
+                                <label className="text-sm font-semibold text-gray-500">Shah Satnam Ji Noble School – Kotda, Udaipur ( Rajasthan )</label>
+                            </div>                  
+                            <div className="flex items-center space-x-2 py-2">
+                                <input type="checkbox" className="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200" />
+                                <label className="text-sm font-semibold text-gray-500">Shah Satnam Ji Girls School – Tara Nagar, Churu ( Rajasthan )</label>
+                            </div>
+                            <div className="flex items-center space-x-2 py-2">
+                                <input type="checkbox" className="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200" />
+                                <label className="text-sm font-semibold text-gray-500">Shah Satnam Ji Girls School – Budhni, Sehore ( Madhya Pradesh )</label>
+                            </div> 
+                            <div className="flex items-center space-x-2 py-2">
+                                <input type="checkbox" className="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200" />
+                                <label className="text-sm font-semibold text-gray-500">Shah Satnam Ji Girls School – Sri Gurusar Modia, Sri Ganganagar ( Rajasthan )</label>
+                            </div>
+                            <div className="flex items-center space-x-2 py-2">
+                                <input type="checkbox" className="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200" />
+                                <label className="text-sm font-semibold text-gray-500">Shah Satnam Ji Girls College – Sri Gurusar Modia, Sri Ganganagar ( Rajasthan )</label>
+                            </div>
+                            <div className="flex items-center space-x-2 py-2">
+                                <input type="checkbox" className="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200" />
+                                <label className="text-sm font-semibold text-gray-500">Shah Satnam Ji Boys School – Sri Gurusar Modia, Sri Ganganagar ( Rajasthan )</label>
+                            </div>
+                        </div>
+                        <div className='w-full text-center mb-4 flex-1'>
+                            <div className='text-lg' >Gender</div>
+                            <div className=" flex items-center space-x-2 py-2">
+                                <input type="checkbox" className="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200" />
+                                <label className="text-sm font-semibold text-gray-500">Male</label>
+                            </div>
+                            <div className="flex items-center space-x-2 py-2">
+                                <input type="checkbox" className="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200" />
+                                <label className="text-sm font-semibold text-gray-500">Female</label>
+                            </div>                      
+                            <div className="flex items-center space-x-2 py-2">
+                                <input type="checkbox" className="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200" />
+                                <label className="text-sm font-semibold text-gray-500">Other</label>
+                            </div>                      
+                        </div>
+                        <div className='w-full text-center mb-4 flex-1'>
+                            <div className='text-lg' >Educational Institutions</div>
+                            <div className=" flex items-center space-x-2 py-2">
+                                <input type="checkbox" className="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200" />
+                                <label className="text-sm font-semibold text-gray-500">Shah Satnam Ji Girls School – Sirsa ( Haryana )</label>
+                            </div>
+                            <div className="flex items-center space-x-2 py-2">
+                                <input type="checkbox" className="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200" />
+                                <label className="text-sm font-semibold text-gray-500">Shah Satnam Ji Girls College – Sirsa ( Haryana )</label>
+                            </div>
+                            <div className="flex items-center space-x-2 py-2">
+                                <input type="checkbox" className="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200" />
+                                <label className="text-sm font-semibold text-gray-500">Shah Satnam Ji Boys School – Sirsa ( Haryana )</label>
+                            </div>
+                            <div className="flex items-center space-x-2 py-2">
+                                <input type="checkbox" className="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200" />
+                                <label className="text-sm font-semibold text-gray-500">Shah Satnam Ji Boys College – Sirsa ( Haryana )</label>
+                            </div>                 
+                            <div className="flex items-center space-x-2 py-2">
+                                <input type="checkbox" className="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200" />
+                                <label className="text-sm font-semibold text-gray-500">Shah Satnam Ji College of Education – Sirsa ( Haryana )</label>
+                            </div>
+                            <div className="flex items-center space-x-2 py-2">
+                                <input type="checkbox" className="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200" />
+                                <label className="text-sm font-semibold text-gray-500">Saint MSG Glorious International School – Sirsa ( Haryana )</label>
+                            </div>
+                            <div className="flex items-center space-x-2 py-2">
+                                <input type="checkbox" className="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200" />
+                                <label className="text-sm font-semibold text-gray-500">Shah Satnam Ji Noble School – Kotda, Udaipur ( Rajasthan )</label>
+                            </div>                  
+                            <div className="flex items-center space-x-2 py-2">
+                                <input type="checkbox" className="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200" />
+                                <label className="text-sm font-semibold text-gray-500">Shah Satnam Ji Girls School – Tara Nagar, Churu ( Rajasthan )</label>
+                            </div>
+                            <div className="flex items-center space-x-2 py-2">
+                                <input type="checkbox" className="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200" />
+                                <label className="text-sm font-semibold text-gray-500">Shah Satnam Ji Girls School – Budhni, Sehore ( Madhya Pradesh )</label>
+                            </div> 
+                            <div className="flex items-center space-x-2 py-2">
+                                <input type="checkbox" className="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200" />
+                                <label className="text-sm font-semibold text-gray-500">Shah Satnam Ji Girls School – Sri Gurusar Modia, Sri Ganganagar ( Rajasthan )</label>
+                            </div>
+                            <div className="flex items-center space-x-2 py-2">
+                                <input type="checkbox" className="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200" />
+                                <label className="text-sm font-semibold text-gray-500">Shah Satnam Ji Girls College – Sri Gurusar Modia, Sri Ganganagar ( Rajasthan )</label>
+                            </div>
+                            <div className="flex items-center space-x-2 py-2">
+                                <input type="checkbox" className="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200" />
+                                <label className="text-sm font-semibold text-gray-500">Shah Satnam Ji Boys School – Sri Gurusar Modia, Sri Ganganagar ( Rajasthan )</label>
+                            </div>
+                        </div>
+                        <div className='w-full text-center mb-4 flex-1'>
+                            <div className='text-lg' >Gender</div>
+                            <div className=" flex items-center space-x-2 py-2">
+                                <input type="checkbox" className="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200" />
+                                <label className="text-sm font-semibold text-gray-500">Male</label>
+                            </div>
+                            <div className="flex items-center space-x-2 py-2">
+                                <input type="checkbox" className="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200" />
+                                <label className="text-sm font-semibold text-gray-500">Female</label>
+                            </div>                      
+                            <div className="flex items-center space-x-2 py-2">
+                                <input type="checkbox" className="w-4 h-4 transition duration-300 rounded focus:ring-2 accent-blue-500 focus:ring-offset-0 focus:outline-none focus:ring-blue-200" />
+                                <label className="text-sm font-semibold text-gray-500">Other</label>
+                            </div>                      
+                        </div>
+                </div>
             <div className='flex flex-col'>
               <ul className='filtered-list flex justify-between py-1 ' >
                 <li>Full Name</li>
