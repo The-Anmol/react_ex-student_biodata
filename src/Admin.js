@@ -22,7 +22,7 @@ const Admin = () => {
         </div>
         <div className='flex flex-col bg-gray-200 justify-evenly sm:flex-row'>
             <div className='justify-between p-4 '>
-                <span className='flex bg-white p-4 rounded-3xl text-center'>
+                <span className='flex bg-white p-4 rounded-2xl text-center'>
                     <div className='flex my-auto'> 
                         {/* <MaterialIcon icon="group" size={80} /> */}
                         <MdGroup  className='flex my-auto' size={100} />
@@ -37,7 +37,7 @@ const Admin = () => {
         <div className='flex flex-col bg-gray-200 my-4 justify-evenly sm:flex-row'>
           <div className='w-full p-4 flex flex-col'>
             <div className='flex flex-col gap-2 mb-2 xl:justify-evenly xl:flex-row '>
-                <button onClick={handleClick} className='h-max w-max px-4 py-2 text-center my-auto flex gap-2 text-md bg-white p-2'> 
+                <button onClick={handleClick} className='h-max w-max px-4 py-2 rounded text-center my-auto flex gap-2 text-md bg-white p-2'> 
                     {/* <MaterialIcon icon="tune" size={25} /> */}
                     <MdTune className='flex my-auto' size={23} />
                     Filter
