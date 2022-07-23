@@ -14,7 +14,7 @@ const Edit = () => {
     console.log(isDisabled);
     console.log("Edit Clicked");
   }
-  
+
 return (
     <>
         <div className="flex items-center min-h-screen p-8 bg-gray-100 lg:justify-center" id='formBase' onLoad={disableInput}>
@@ -30,7 +30,7 @@ return (
             {/* Name */}
             <div className="flex flex-col space-y-1">
               <label  htmlFor="name" className="text-sm font-semibold text-gray-500 readOnly required">Name</label>
-              <input disabled={`${ isDisabled ? "true" : "false" } `} type="text" id="name" className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
+              <input defaultValue={"Anmol"} disabled={`${ isDisabled ? "true" : "false" } `} type="text" id="name" className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
                 />
             </div>
             {/* Age */}
