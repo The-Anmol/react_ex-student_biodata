@@ -14,8 +14,8 @@ const Edit = () => {
     console.log(isDisabled);
     console.log("Edit Clicked");
   }
-
-  return (
+  
+return (
     <>
         <div className="flex items-center min-h-screen p-8 bg-gray-100 lg:justify-center" id='formBase' onLoad={disableInput}>
       <div className="flex flex-col flex-1 overflow-hidden bg-white rounded-md shadow-lg max  md:flex-1 lg:max-w-screen-lg" >
@@ -30,15 +30,15 @@ const Edit = () => {
             {/* Name */}
             <div className="flex flex-col space-y-1">
               <label  htmlFor="name" className="text-sm font-semibold text-gray-500 readOnly required">Name</label>
-              <input type="text" id="name" className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
-               disabled={`${ isDisabled ? "true" : "false" } `} />
+              <input disabled={`${ isDisabled ? "true" : "false" } `} type="text" id="name" className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
+                />
             </div>
             {/* Age */}
             <div className="flex flex-col space-y-1">
               <div className="flex items-center justify-between">
                 <label htmlFor="age" className="text-sm font-semibold text-gray-500 required">Age</label>
               </div>
-              <input type="number" disabled={`${ isDisabled ? "true" : "false" } `}  id="age" className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
+              <input disabled={`${ isDisabled ? "true" : "false" } `} type="number"   id="age" className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
               />
             </div>
             {/* Gender And MArtial Status */}
@@ -80,11 +80,11 @@ const Edit = () => {
                 </ul> 
             </div>
             </div>
-            </span>
+            </span> 
             {/* Phone Number Calling */}
             <div className="flex flex-col space-y-1">
               <label htmlFor="phone-number" className="text-sm font-semibold text-gray-500 required">Phone Number ( Calling )</label>
-              <input
+              <input disabled={`${ isDisabled ? "true" : "false" } `}
                 type="number"
                 id="phone-call"
                  
@@ -95,7 +95,7 @@ const Edit = () => {
             {/* Phone Number Whatsapp */}
             <div className="flex flex-col space-y-1">
               <label htmlFor="phone-number" className="text-sm font-semibold text-gray-500">Phone Number ( Whatsapp )</label>
-              <input
+              <input disabled={`${ isDisabled ? "true" : "false" } `}
                 type="number"
                 id="phone-whatsapp"
                  
@@ -105,7 +105,7 @@ const Edit = () => {
             {/* Email*/}
             <div className="flex flex-col space-y-1">
               <label htmlFor="email" className="text-sm font-semibold text-gray-500">Email address</label>
-              <input
+              <input disabled={`${ isDisabled ? "true" : "false" } `}
                 type="email"
                 id="email"
                  
@@ -117,7 +117,7 @@ const Edit = () => {
               <div className="flex items-center justify-between">
                 <label htmlFor="address" className="text-sm font-semibold text-gray-500 required">Address</label>
               </div>
-              <input
+              <input disabled={`${ isDisabled ? "true" : "false" } `}
                 type="text"
                 id="address"
                  
@@ -128,7 +128,7 @@ const Edit = () => {
             {/* City */}
             <div className="flex flex-col space-y-1">
               <label htmlFor="city" className="text-sm font-semibold text-gray-500 required">City</label>
-              <input
+              <input disabled={`${ isDisabled ? "true" : "false" } `}
                 type="text"
                 id="city"
                 required
@@ -139,7 +139,7 @@ const Edit = () => {
             {/* State */}
             <div className="flex flex-col space-y-1">
               <label htmlFor="state" className="text-sm font-semibold text-gray-500 required">City</label>
-              <input
+              <input disabled={`${ isDisabled ? "true" : "false" } `}
                 type="text"
                 id="state"
                  
@@ -150,7 +150,7 @@ const Edit = () => {
             {/* Country */}
             <div className="flex flex-col space-y-1">
               <label htmlFor="country" className="text-sm font-semibold text-gray-500 required">Country</label>
-              <input
+              <input disabled={`${ isDisabled ? "true" : "false" } `}
                 type="text"
                 id="country"
                  
@@ -167,7 +167,7 @@ const Edit = () => {
             {/* Name of the institute */}
             <div className="flex flex-col space-y-1">
               <label htmlFor="name" className="text-sm font-semibold text-gray-500 required">Name of the institute</label>
-              <input
+              <input disabled={`${ isDisabled ? "true" : "false" } `}
                 type="text"
                 id="institute-name"
                 required
@@ -180,7 +180,7 @@ const Edit = () => {
               <div className="flex items-center justify-between">
                 <label htmlFor="course" className="text-sm font-semibold text-gray-500 required">Course you were enrolled in</label>
               </div>
-              <input
+              <input disabled={`${ isDisabled ? "true" : "false" } `}
                 type="text"
                 id="course-enrolled"
                  
@@ -191,7 +191,7 @@ const Edit = () => {
             {/* Duration during which you studied at a institute (specify the number of years, or months.) */}
             <div className="flex flex-col space-y-1">
               <label htmlFor="course-duration" className="text-sm font-semibold text-gray-500 required">Duration during which you studied at a institute (specify the number of years, or months.)</label>
-              <input
+              <input disabled={`${ isDisabled ? "true" : "false" } `}
                 type="text"
                 id="course-duration"
                  
@@ -202,7 +202,7 @@ const Edit = () => {
             {/* Admission number (at the institute, if you don't remember, leave blank.) */}
             <div className="flex flex-col space-y-1">
               <label htmlFor="admission-number" className="text-sm font-semibold text-gray-500">Admission number (at the institute, if you don't remember, leave blank.)</label>
-              <input
+              <input disabled={`${ isDisabled ? "true" : "false" } `}
                 type="number"
                 id="admission-number"
                  
@@ -220,27 +220,27 @@ const Edit = () => {
               <label htmlFor="name" className="text-sm font-semibold text-gray-500 required">What most accurately describes your current position?</label>
               <div className="flex flex-col gap-2 ">
                 <span>
-                    <input type="radio" id="position-job" required   className="w-fit mr-2 px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-blue-200" />
+                    <input disabled={`${ isDisabled ? "true" : "false" } `} type="radio" id="position-job" required   className="w-fit mr-2 px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-blue-200" />
                     <label className="text-sm font-semibold text-gray-500 ">Job</label>
                 </span>
                 <span>
-                    <input type="radio" id="position-student" required   className="w-fit mr-2 px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-blue-200" />
+                    <input disabled={`${ isDisabled ? "true" : "false" } `} type="radio" id="position-student" required   className="w-fit mr-2 px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-blue-200" />
                     <label className="text-sm font-semibold text-gray-500 ">Student</label>
                 </span>
                 <span>
-                    <input type="radio" id="position-bussiness" required   className="w-fit mr-2 px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-blue-200" />
+                    <input disabled={`${ isDisabled ? "true" : "false" } `} type="radio" id="position-bussiness" required   className="w-fit mr-2 px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-blue-200" />
                     <label className="text-sm font-semibold text-gray-500 ">Businness</label>
                 </span>
                 <span>
-                    <input type="radio" id="position-unemployed" required   className="w-fit mr-2 px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-blue-200" />
+                    <input disabled={`${ isDisabled ? "true" : "false" } `} type="radio" id="position-unemployed" required   className="w-fit mr-2 px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-blue-200" />
                     <label className="text-sm font-semibold text-gray-500 ">Unemployed</label>
                 </span>
                 <span className='flex gap-20 align-center'>
                   <span >
-                      <input type="radio" id="position-other" required   className="w-fit mr-2 px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none  focus:ring-blue-200" />
+                      <input disabled={`${ isDisabled ? "true" : "false" } `} type="radio" id="position-other" required   className="w-fit mr-2 px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none  focus:ring-blue-200" />
                       <label className="text-sm font-semibold text-gray-500 ">Other</label>
                   </span>
-                  <input type="number" id="position-other-value"   required className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200" />
+                  <input disabled={`${ isDisabled ? "true" : "false" } `} type="number" id="position-other-value"   required className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200" />
                 </span>
               </div>
             </div>
@@ -352,7 +352,7 @@ const Edit = () => {
             {/* If Others, Please specify (Please specifically mention if you're working in a government organization or anything not in the list) */}
             <div className="flex flex-col space-y-1">
               <label htmlFor="phone-number" className="text-sm font-semibold text-gray-500 required">If Others, Please specify (Please specifically mention if you're working in a government organization or anything not in the list)</label>
-              <input
+              <input disabled={`${ isDisabled ? "true" : "false" } `}
                 type="text"
                 id="other-job-sector"
                  
@@ -399,7 +399,7 @@ const Edit = () => {
             {/* If Others, Please specify here*/}
             <div className="flex flex-col space-y-1">
               <label htmlFor="other-job-domain-label" className="text-sm font-semibold text-gray-500">If Others, Please specify here</label>
-              <input
+              <input disabled={`${ isDisabled ? "true" : "false" } `}
                 type="text"
                 name="other-job-domain-input"
                  
@@ -411,7 +411,7 @@ const Edit = () => {
               <div className="flex items-center justify-between">
                 <label htmlFor="designation" className="text-sm font-semibold text-gray-500 required">Designation</label>
               </div>
-              <input
+              <input disabled={`${ isDisabled ? "true" : "false" } `}
                 type="text"
                 id="designation"
                  
@@ -424,7 +424,7 @@ const Edit = () => {
               <div className="flex items-center justify-between">
                 <label htmlFor="department" className="text-sm font-semibold text-gray-500 required">Department</label>
               </div>
-              <input
+              <input disabled={`${ isDisabled ? "true" : "false" } `}
                 type="text"
                 id="department"
                  
@@ -437,7 +437,7 @@ const Edit = () => {
               <div className="flex items-center justify-between">
                 <label htmlFor="company" className="text-sm font-semibold text-gray-500 required">Company/Firm/Organization</label>
               </div>
-              <input
+              <input disabled={`${ isDisabled ? "true" : "false" } `}
                 type="text"
                 id="company"
                  
@@ -450,7 +450,7 @@ const Edit = () => {
               <div className="flex items-center justify-between">
                 <label htmlFor="working-city" className="text-sm font-semibold text-gray-500 required">City where you're working</label>
               </div>
-              <input
+              <input disabled={`${ isDisabled ? "true" : "false" } `}
                 type="text"
                 id="working-city"
                  
@@ -463,7 +463,7 @@ const Edit = () => {
               <div className="flex items-center justify-between">
                 <label htmlFor="working-state" className="text-sm font-semibold text-gray-500 required">State where you're working</label>
               </div>
-              <input
+              <input disabled={`${ isDisabled ? "true" : "false" } `}
                 type="text"
                 id="working-state"
                  
@@ -476,7 +476,7 @@ const Edit = () => {
               <div className="flex items-center justify-between">
                 <label htmlFor="working-country" className="text-sm font-semibold text-gray-500 required">Country where you're working</label>
               </div>
-              <input
+              <input disabled={`${ isDisabled ? "true" : "false" } `}
                 type="text"
                 id="working-country"
                  
@@ -489,7 +489,7 @@ const Edit = () => {
               <div className="flex items-center justify-between">
                 <label htmlFor="working-experience" className="text-sm font-semibold text-gray-500 required">Experience (in Years and months)</label>
               </div>
-              <input
+              <input disabled={`${ isDisabled ? "true" : "false" } `}
                 type="text"
                 id="working-experience"
                  
@@ -507,7 +507,7 @@ const Edit = () => {
             {/* Qualifications Completed (Degrees, Diplomas etc.) */}
             <div className="flex flex-col space-y-1">
               <label htmlFor="  " className="text-sm font-semibold text-gray-500 required">Qualifications Completed (Degrees, Diplomas etc.)</label>
-              <input
+              <input disabled={`${ isDisabled ? "true" : "false" } `}
                 type="text"
                 id="qualifications-completed"
                 required
@@ -520,7 +520,7 @@ const Edit = () => {
               <div className="flex items-center justify-between">
                 <label htmlFor="qualifications-completed-institute" className="text-sm font-semibold text-gray-500 required">Institute where you completed your most recent qualification from</label>
               </div>
-              <input
+              <input disabled={`${ isDisabled ? "true" : "false" } `}
                 type="text"
                 id="qualifications-completed-institute"
                  
@@ -537,7 +537,7 @@ const Edit = () => {
             {/* Which degree /diploma program are you currently enrolled in? */}
             <div className="flex flex-col space-y-1">
               <label htmlFor="ongoing-course" className="text-sm font-semibold text-gray-500 ">Which degree /diploma program are you currently enrolled in?</label>
-              <input
+              <input disabled={`${ isDisabled ? "true" : "false" } `}
                 type="text"
                 id="ongoing-course"
                  
@@ -549,7 +549,7 @@ const Edit = () => {
               <div className="flex items-center justify-between">
                 <label htmlFor="area-study" className="text-sm font-semibold text-gray-500 ">Area of Study</label>
               </div>
-              <input
+              <input disabled={`${ isDisabled ? "true" : "false" } `}
                 type="text"
                 id="area-study"
                  
@@ -561,7 +561,7 @@ const Edit = () => {
               <div className="flex items-center justify-between">
                 <label htmlFor="currently-enrolled-institute" className="text-sm font-semibold text-gray-500 ">Institution/University currently enrolled at.</label>
               </div>
-              <input
+              <input disabled={`${ isDisabled ? "true" : "false" } `}
                 type="text"
                 id="currently-enrolled-institute"
                  
@@ -578,7 +578,7 @@ const Edit = () => {
               <div className="flex items-center justify-between">
                 <label htmlFor="skills" className="text-sm font-semibold text-gray-500 required">Your skills, areas of expertise (that you could aid in.)</label>
               </div>
-              <input
+              <input disabled={`${ isDisabled ? "true" : "false" } `}
                 type="text"
                 id="skills"
                  
@@ -591,11 +591,11 @@ const Edit = () => {
               <label htmlFor="name" className="text-sm font-semibold text-gray-500 required">Are you already a member of any pakki sammitti/sewa group?</label>
               <div className="flex flex-col gap-2 ">
                 <span>
-                    <input type="radio" name="sewa-member-yes" required   className="w-fit mr-2 px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-blue-200" />
+                    <input disabled={`${ isDisabled ? "true" : "false" } `} type="radio" name="sewa-member-yes" required   className="w-fit mr-2 px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-blue-200" />
                     <label className="text-sm font-semibold text-gray-500 ">Yes</label>
                 </span>
                 <span>
-                    <input type="radio" name="sewa-member-no" required   className="w-fit mr-2 px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-blue-200" />
+                    <input disabled={`${ isDisabled ? "true" : "false" } `} type="radio" name="sewa-member-no" required   className="w-fit mr-2 px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-blue-200" />
                     <label className="text-sm font-semibold text-gray-500 ">No</label>
                 </span>
               </div>
@@ -603,7 +603,7 @@ const Edit = () => {
             {/* Any other information you want to share! (For eg. Achievements, Research experience, Sports or other awards) */}
             <div className="flex flex-col space-y-1">
               <label htmlFor="another-info" className="text-sm font-semibold text-gray-500 required">Any other information you want to share! (For eg. Achievements, Research experience, Sports or other awards)</label>
-              <input
+              <input disabled={`${ isDisabled ? "true" : "false" } `}
                 type="text"
                 id="another-info"
                  
@@ -615,7 +615,7 @@ const Edit = () => {
             <div className="flex flex-col space-y-1">
               <label htmlFor="resume-link-label" className="text-sm font-semibold text-gray-500">Link to your CV/Resume/Portfolio etc. (only if you wish to. You can upload on Google Drive and share the link!)
 </label>
-              <input
+              <input disabled={`${ isDisabled ? "true" : "false" } `}
                 type="text"
                 name="resume-link-input"
                  
@@ -627,13 +627,7 @@ const Edit = () => {
               <div className="flex items-center justify-between">
                 <label htmlFor="suggestion" className="text-sm font-semibold text-gray-500 required">Suggestions for Dera/Sewa (that could be implemented)</label>
               </div>
-              <input
-                type="text"
-                id="suggestion"
-                 
-                required
-                className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
-              />
+              <input disabled={`${ isDisabled ? "true" : "false" } `} type="text" id="suggestion" required className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"/>
             </div>
             <span className=''>
             <div className='flex justify-center'>
