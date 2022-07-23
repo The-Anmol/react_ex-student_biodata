@@ -14,7 +14,7 @@ ol{
     left: 0;
 }
 button{
-    user-select: none;
+    user-select: none;  
 }
 .show{
     display: flex;
