@@ -8,7 +8,6 @@ const Admin = () => {
   function handleClick(){
     setFilterToggled(!filterToggled);
     console.log(filterToggled);
-    console.log("clicked");
   }
 
   return(
