@@ -2,6 +2,8 @@ import React, { useState }  from 'react'
 import { MdSearch } from "react-icons/md";
 import { MdTune } from "react-icons/md";
 import { MdGroup } from "react-icons/md";
+import { MdDelete } from "react-icons/md";
+import { MdOpenInFull } from "react-icons/md";
 import './Admin.css';
 
 const Admin = () => {
@@ -9,7 +11,6 @@ const Admin = () => {
 
   function handleClick(){
     setFilterToggled(!filterToggled);
-    console.log(filterToggled);
   }
 
   return(
@@ -34,7 +35,6 @@ const Admin = () => {
                 </span>
             </div>
          </div>
-
         <div className='flex flex-col bg-gray-300 my-4 justify-end sm:flex-row'>
           <div className='w-full p-4 flex flex-col'>
             <div className='flex flex-col gap-2 mb-2 justify-end items-end'>
@@ -132,6 +132,7 @@ const Admin = () => {
                     <th>Name</th>
                     <th>Qualification</th>
                     <th>Age</th>
+                    <th>Action</th>
                 </tr>
             </thead>
             <tbody className='flex flex-col text-gray-800 text-semibold' >  
@@ -140,36 +141,60 @@ const Admin = () => {
                     <td>Anmol</td>
                     <td>Matric</td>
                     <td>17</td>
+                    <td className='flex space-evenly'>
+                        <MdOpenInFull size={25} />
+                        <MdDelete size={25} />
+                    </td>
                 </tr>
                 <tr className='flex justify-between' >
                     <td>2</td>
                     <td>Nisha</td>
                     <td>Senior Secondary</td>
                     <td>19</td>
+                    <td className='flex space-evenly'>
+                        <MdOpenInFull size={25} />
+                        <MdDelete size={25} />
+                    </td>
                 </tr>
                 <tr className='flex justify-between' >
                     <td>3</td>               
                     <td>Sandeep</td>
                     <td>Graduate</td>
                     <td>22</td>
+                    <td className='flex space-evenly'>
+                        <MdOpenInFull size={25} />
+                        <MdDelete size={25} />
+                    </td>
                 </tr>
                 <tr className='flex justify-between' >
                     <td>4</td>
                     <td>Anmol</td>
                     <td>Matric</td>
                     <td>17</td>
+                    <td className='flex space-evenly'>
+                        <MdOpenInFull size={25} />
+                        <MdDelete size={25} />
+                    </td>
                 </tr>
                 <tr className='flex justify-between' >
                     <td>5</td>
                     <td>Nisha</td>
                     <td>Senior Secondary</td>
                     <td>19</td>
+                    <td className='flex space-evenly'>
+                        <MdOpenInFull size={25} />
+                        <MdDelete size={25} />
+                    </td>
                 </tr>
                 <tr className='flex justify-between' >
                     <td>6</td>               
                     <td>Sandeep</td>
                     <td>Graduate</td>
                     <td>22</td>
+                    <td className='flex space-evenly'>
+                        <MdOpenInFull size={25} />
+                        <MdDelete size={25} />
+                    </td>
                 </tr>
             </tbody>
         </table>

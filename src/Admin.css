@@ -36,4 +36,16 @@ button{
 }
 .content-table tbody tr:nth-of-type(odd) {
     background-color: #d1d5db;
+}   
+/* tr{
+    display: flex;
+    min-width: 100%;
+    text-align: center;
+} */
+tr{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+td{
+    width: fit-content;
 }
