@@ -128,11 +128,11 @@ const Admin = () => {
         <table className="content-table flex flex-col w-full bg-gray-700 border border-black border-solid text-white text-left text-bold border-collapse my-6 overflow-hidden ">
             <thead className='flex w-full ' >
                 <tr className='w-full flex justify-between ' >
-                    <th className='w-max '>Sr no.</th>
+                    <th className=''>Sr no.</th>
                     <th>Name</th>
                     <th>Qualification</th>
                     <th>Age</th>
-                    <th>Action</th>
+                    <th className='flex justify-evenly'>Action</th>
                 </tr>
             </thead>
             <tbody className='flex flex-col text-gray-800 text-semibold' >  
@@ -141,7 +141,7 @@ const Admin = () => {
                     <td>Anmol</td>
                     <td>Matric</td>
                     <td>17</td>
-                    <td className='flex space-evenly'>
+                    <td className='flex justify-evenly'>
                         <MdOpenInFull size={25} />
                         <MdDelete size={25} />
                     </td>
@@ -151,7 +151,7 @@ const Admin = () => {
                     <td>Nisha</td>
                     <td>Senior Secondary</td>
                     <td>19</td>
-                    <td className='flex space-evenly'>
+                    <td className='flex justify-evenly'>
                         <MdOpenInFull size={25} />
                         <MdDelete size={25} />
                     </td>
@@ -161,7 +161,7 @@ const Admin = () => {
                     <td>Sandeep</td>
                     <td>Graduate</td>
                     <td>22</td>
-                    <td className='flex space-evenly'>
+                    <td className='flex justify-evenly'>
                         <MdOpenInFull size={25} />
                         <MdDelete size={25} />
                     </td>
@@ -171,7 +171,7 @@ const Admin = () => {
                     <td>Anmol</td>
                     <td>Matric</td>
                     <td>17</td>
-                    <td className='flex space-evenly'>
+                    <td className='flex '>
                         <MdOpenInFull size={25} />
                         <MdDelete size={25} />
                     </td>
@@ -181,7 +181,7 @@ const Admin = () => {
                     <td>Nisha</td>
                     <td>Senior Secondary</td>
                     <td>19</td>
-                    <td className='flex space-evenly'>
+                    <td className='flex justify-evenly'>
                         <MdOpenInFull size={25} />
                         <MdDelete size={25} />
                     </td>
@@ -191,7 +191,7 @@ const Admin = () => {
                     <td>Sandeep</td>
                     <td>Graduate</td>
                     <td>22</td>
-                    <td className='flex space-evenly'>
+                    <td className='flex justify-evenly'>
                         <MdOpenInFull size={25} />
                         <MdDelete size={25} />
                     </td>

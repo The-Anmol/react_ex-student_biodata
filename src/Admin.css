@@ -28,8 +28,8 @@ button{
 }
 .content-table th,
 .content-table td{
-    padding: 12px 15px;
-    width: 100%;
+    padding: .75rem 1.25rem;
+    margin-block: auto;
 }
 .content-table tbody tr:nth-of-type(even) {
     background-color: white;
@@ -37,15 +37,24 @@ button{
 .content-table tbody tr:nth-of-type(odd) {
     background-color: #d1d5db;
 }   
-/* tr{
-    display: flex;
-    min-width: 100%;
-    text-align: center;
-} */
+.content-table td:not(:first-child){
+    width: 100%;
+} 
+.content-table th:not(:first-child){
+    width: 100%;
+}
+.content-table td:first-child{
+    width: 50px;
+} 
+.content-table th:first-child{
+    width: 50px;
+}
 tr{
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: 50px 1fr 1fr 1fr 1fr;
 }
 td{
     width: fit-content;
+    justify-content: space-evenly; 
+    margin: auto ;
 }
