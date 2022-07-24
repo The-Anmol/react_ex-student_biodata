@@ -3,7 +3,7 @@ import { MdSearch } from "react-icons/md";
 import { MdTune } from "react-icons/md";
 import { MdGroup } from "react-icons/md";
 import { MdDelete } from "react-icons/md";
-import { MdOpenInFull } from "react-icons/md";
+import { MdOutlineVisibility } from "react-icons/md";
 import './Admin.css';
 
 const Admin = () => {
@@ -142,7 +142,7 @@ const Admin = () => {
                     <td>Matric</td>
                     <td>17</td>
                     <td className='flex justify-evenly'>
-                        <MdOpenInFull size={25} />
+                        <MdOutlineVisibility size={25} />
                         <MdDelete size={25} />
                     </td>
                 </tr>
@@ -152,7 +152,7 @@ const Admin = () => {
                     <td>Senior Secondary</td>
                     <td>19</td>
                     <td className='flex justify-evenly'>
-                        <MdOpenInFull size={25} />
+                        <MdOutlineVisibility size={25} />
                         <MdDelete size={25} />
                     </td>
                 </tr>
@@ -162,7 +162,7 @@ const Admin = () => {
                     <td>Graduate</td>
                     <td>22</td>
                     <td className='flex justify-evenly'>
-                        <MdOpenInFull size={25} />
+                        <MdOutlineVisibility size={25} />
                         <MdDelete size={25} />
                     </td>
                 </tr>
@@ -172,7 +172,7 @@ const Admin = () => {
                     <td>Matric</td>
                     <td>17</td>
                     <td className='flex '>
-                        <MdOpenInFull size={25} />
+                        <MdOutlineVisibility size={25} />
                         <MdDelete size={25} />
                     </td>
                 </tr>
@@ -182,7 +182,7 @@ const Admin = () => {
                     <td>Senior Secondary</td>
                     <td>19</td>
                     <td className='flex justify-evenly'>
-                        <MdOpenInFull size={25} />
+                        <MdOutlineVisibility size={25} />
                         <MdDelete size={25} />
                     </td>
                 </tr>
@@ -192,7 +192,7 @@ const Admin = () => {
                     <td>Graduate</td>
                     <td>22</td>
                     <td className='flex justify-evenly'>
-                        <MdOpenInFull size={25} />
+                        <MdOutlineVisibility size={25} />
                         <MdDelete size={25} />
                     </td>
                 </tr>
