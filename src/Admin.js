@@ -40,9 +40,8 @@ const Admin = () => {
             <div className='flex flex-col gap-2 justify-end items-end'>
                 <div className='flex flex-col gap-4 justify-end '>
                     <div className='flex flex-row'>
-                        <input placeholder='Search for Name ' className='px-4 py-2 transition duration-300 border font-semibold text-gray-700 bg-white border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"' type="text" />
-                        <span className='-ml-8 flex items-center'>
-                        {/* <MaterialIcon icon="search" size={25} /> */}
+                        <input placeholder='Search for Name ' className='px-4 -mr-2.5 py-2 transition duration-300 border font-semibold text-gray-700 bg-white border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"' type="text" />
+                        <span className='mr-2.5 -ml-6 flex items-center'>
                         <MdSearch className='flex my-auto' size={23} />
                         </span>
                     </div>
